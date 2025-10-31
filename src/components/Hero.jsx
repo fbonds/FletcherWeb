@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion'
+import { useState } from 'react'
+import profileImage from '../assets/me-transparent-bkgrnd.png'
 
 export default function Hero() {
+  const [isHovering, setIsHovering] = useState(false)
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4">
       <div className="max-w-6xl mx-auto text-center z-10">
@@ -21,7 +25,11 @@ export default function Hero() {
             }}
             transition={{ duration: 5, repeat: Infinity }}
           >
-            <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">
+            <span 
+              className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent cursor-pointer"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+            >
               Fletcher Bonds
             </span>
           </motion.h1>
@@ -32,7 +40,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <span className="glow-text-cyan">Software Tester</span> · <span className="glow-text-pink">Desktop Support</span> · <span className="glow-text-blue">AI Explorer</span>
+            <span className="glow-text-cyan">Software Tester</span> · <span className="glow-text-pink">IT Systems Support</span> · <span className="glow-text-blue">AI Explorer</span>
           </motion.p>
 
           <motion.div
@@ -76,6 +84,29 @@ export default function Hero() {
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/50 to-gray-950 pointer-events-none" />
+      
+      <motion.div
+        className="fixed left-0 bottom-0 z-20 pointer-events-none"
+        initial={{ y: '100%' }}
+        animate={{ y: isHovering ? '0%' : '100%' }}
+        transition={{ 
+          type: 'spring',
+          stiffness: 100,
+          damping: 20,
+          duration: 0.8
+        }}
+        style={{ 
+          height: 'auto',
+          maxHeight: '70vh'
+        }}
+      >
+        <img 
+          src={profileImage} 
+          alt="Fletcher Bonds"
+          className="h-full w-auto object-contain object-bottom"
+          style={{ maxHeight: '70vh' }}
+        />
+      </motion.div>
     </section>
   )
 }

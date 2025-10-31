@@ -76,7 +76,24 @@ export default function Contact() {
               © 2025 Fletcher Bonds. All rights reserved.
             </p>
             <p className="text-cyan-400 text-xs mt-2">
-              Built with VS Code + Droid from Factory.AI
+              Built with{' '}
+              <a 
+                href="https://code.visualstudio.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-cyan-300 underline transition-colors"
+              >
+                VS Code
+              </a>
+              {' '}+{' '}
+              <a 
+                href="https://factory.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-purple-400 underline transition-colors"
+              >
+                Droid from Factory.AI
+              </a>
             </p>
           </motion.div>
         </motion.div>

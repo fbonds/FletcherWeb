@@ -1,21 +1,59 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
+import HolographicGif from './HolographicGif'
 
 export default function About() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const [hoveredSkill, setHoveredSkill] = useState(null)
 
   const skills = [
-    { name: 'IBM Mainframe', color: '#0530AD' },
-    { name: 'Linux/Unix', color: '#FCC624' },
-    { name: 'Windows Server', color: '#00A4EF' },
-    { name: 'macOS/iOS', color: '#A3AAAE' },
-    { name: 'Android', color: '#3DDC84' },
-    { name: 'Cloud Tech', color: '#4285F4' },
-    { name: 'VS Code', color: '#22d3ee' },
-    { name: 'Factory.AI', color: '#a855f7' },
-    { name: 'Software Testing', color: '#10b981' },
+    { 
+      name: 'IBM Mainframe', 
+      color: '#0530AD',
+      gifUrl: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExejgxMHFwZGFiZDZtd25lcnpuemw2NzAxMGdobnllOXFtdTJnNTdyeSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oz8y0fIoBvzUEv88E/giphy.gif'
+    },
+    { 
+      name: 'Linux/Unix', 
+      color: '#FCC624',
+      gifUrl: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXowZ2plbWgzbW84NGVhb2NueWoxdGV4NHRsNDB1cGVqbHBjMmd3cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P8ef3Dkynk0xLx1h1T/giphy.gif'
+    },
+    { 
+      name: 'Windows Server', 
+      color: '#00A4EF',
+      gifUrl: 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGhiZ3g2eThuMWhueGVtazg1OHMyMXpjM2N4YXpjZHRjdXIweGxhOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J08r3aXHt0BDATrfyT/giphy.gif'
+    },
+    { 
+      name: 'macOS/iOS', 
+      color: '#A3AAAE',
+      gifUrl: 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDJwaWJ6MXNnNnY3MjAybTR6MW05eGp4dWFhZ2JtOGp5azZkZ3ZhcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4pThMAKS4BOtz8d2/giphy.gif'
+    },
+    { 
+      name: 'Android', 
+      color: '#3DDC84',
+      gifUrl: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzFjeXM4OHpsenVtbXpzZXR5Z2NzMXViMGRlbDNhYjJ5ank2ZHZ3NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10mzF0YmVmZNuw/giphy.gif'
+    },
+    { 
+      name: 'Cloud Tech', 
+      color: '#4285F4',
+      gifUrl: 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTB2MGxoeXNjN3RsbWt3bng3N2V4Y2JoNThnaWI0a295ZjBuMHdtMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwucrl3sH0GjGzm/giphy.gif'
+    },
+    { 
+      name: 'VS Code', 
+      color: '#22d3ee',
+      gifUrl: 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGx6d24xa292empmdm84OXA0NWxvd2RsYmd5aDdnZjM1Y3oyZWJkMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif'
+    },
+    { 
+      name: 'Factory.AI', 
+      color: '#a855f7',
+      gifUrl: 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXl4NDR3eDY5cG9oM213bzhkOHg5enR5bWNpcWp0MDZvbjQ5NWd4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/THf4SfOn2szSrNl8r1/giphy.gif'
+    },
+    { 
+      name: 'Software Testing', 
+      color: '#10b981',
+      gifUrl: 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmR4bTk2dzIwZ2dzaXZsbDEzaHYwc3VlNXA5a3BhMHEzamg5eDcybCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7692c5v3NGGBWSKm3s/giphy.gif'
+    },
   ]
 
   return (
@@ -49,7 +87,7 @@ export default function About() {
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              As a software tester and desktop support professional, I&apos;m now exploring the incredible 
+              As a software tester and IT systems support professional, I&apos;m now exploring the incredible 
               world of AI-assisted development. This website is proof that you don&apos;t need to be a 
               developer to create amazing things.
             </motion.p>
@@ -73,11 +111,13 @@ export default function About() {
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
-                  className="glass-panel p-6 text-center hover:bg-white/10 transition-all duration-300"
+                  className="glass-panel p-6 text-center hover:bg-white/10 transition-all duration-300 cursor-pointer"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                   transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
                   whileHover={{ scale: 1.05 }}
+                  onMouseEnter={() => setHoveredSkill(skill)}
+                  onMouseLeave={() => setHoveredSkill(null)}
                 >
                   <span className="text-xl font-semibold" style={{ color: skill.color }}>
                     {skill.name}
@@ -88,6 +128,16 @@ export default function About() {
           </div>
         </motion.div>
       </div>
+
+      {/* Holographic GIF Display */}
+      {hoveredSkill && (
+        <HolographicGif
+          isVisible={!!hoveredSkill}
+          gifUrl={hoveredSkill.gifUrl}
+          color={hoveredSkill.color}
+          title={hoveredSkill.name}
+        />
+      )}
     </section>
   )
 }
