@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import profileImage from '../assets/me-transparent-bkgrnd.png'
+import { getPersonalizedGreeting } from '../utils/personalization'
 
 const TEXT_GLOW_ANIMATION = [
   '0 0 20px #8b5cf6, 0 0 40px #8b5cf6',
@@ -17,9 +18,14 @@ const ROLES = [
 
 export default function Hero() {
   const [isHovering, setIsHovering] = useState(false)
+  const [greeting, setGreeting] = useState(null)
   
   const handleMouseEnter = useCallback(() => setIsHovering(true), [])
   const handleMouseLeave = useCallback(() => setIsHovering(false), [])
+  
+  useEffect(() => {
+    setGreeting(getPersonalizedGreeting())
+  }, [])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4">
@@ -64,11 +70,30 @@ export default function Hero() {
             ))}
           </motion.p>
 
+          {greeting && (
+            <motion.div
+              className="mb-8 flex items-center justify-center gap-2"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.5, duration: 0.8 }}
+            >
+              <span className="text-2xl">{greeting.emoji}</span>
+              <motion.p
+                className="text-base md:text-lg text-cyan-400 font-mono"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.7, duration: 1 }}
+              >
+                <span className="text-purple-400">⟩</span> {greeting.text}
+              </motion.p>
+            </motion.div>
+          )}
+
           <motion.div
             className="flex gap-4 justify-center flex-wrap"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 1 }}
+            transition={{ delay: 2, duration: 1 }}
           >
             <a 
               href="#about" 
