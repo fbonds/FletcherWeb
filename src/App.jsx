@@ -1,6 +1,7 @@
 import Scene3D from './components/Scene3D'
 import Hero from './components/Hero'
 import About from './components/About'
+import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Scene3D />
       <Hero />
       <About />
+      <Testimonials />
       <Contact />
     </div>
   )

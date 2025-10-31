@@ -1,9 +1,25 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import profileImage from '../assets/me-transparent-bkgrnd.png'
+
+const TEXT_GLOW_ANIMATION = [
+  '0 0 20px #8b5cf6, 0 0 40px #8b5cf6',
+  '0 0 30px #ec4899, 0 0 60px #ec4899',
+  '0 0 20px #06b6d4, 0 0 40px #06b6d4',
+  '0 0 20px #8b5cf6, 0 0 40px #8b5cf6',
+]
+
+const ROLES = [
+  { text: 'Software Tester', className: 'glow-text-cyan' },
+  { text: 'IT Systems Support', className: 'glow-text-pink' },
+  { text: 'AI Explorer', className: 'glow-text-blue' }
+]
 
 export default function Hero() {
   const [isHovering, setIsHovering] = useState(false)
+  
+  const handleMouseEnter = useCallback(() => setIsHovering(true), [])
+  const handleMouseLeave = useCallback(() => setIsHovering(false), [])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4">
@@ -16,19 +32,14 @@ export default function Hero() {
           <motion.h1 
             className="text-6xl md:text-8xl font-bold mb-6"
             animate={{ 
-              textShadow: [
-                '0 0 20px #8b5cf6, 0 0 40px #8b5cf6',
-                '0 0 30px #ec4899, 0 0 60px #ec4899',
-                '0 0 20px #06b6d4, 0 0 40px #06b6d4',
-                '0 0 20px #8b5cf6, 0 0 40px #8b5cf6',
-              ]
+              textShadow: TEXT_GLOW_ANIMATION
             }}
             transition={{ duration: 5, repeat: Infinity }}
           >
             <span 
               className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent cursor-pointer"
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               Fletcher Bonds
             </span>
@@ -40,7 +51,17 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <span className="glow-text-cyan">Software Tester</span> · <span className="glow-text-pink">IT Systems Support</span> · <span className="glow-text-blue">AI Explorer</span>
+            {ROLES.map((role, index) => (
+              <motion.span
+                key={role.text}
+                className={role.className}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 + index * 0.2, duration: 0.8 }}
+              >
+                {role.text}{index < ROLES.length - 1 && ' · '}
+              </motion.span>
+            ))}
           </motion.p>
 
           <motion.div
