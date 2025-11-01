@@ -36,26 +36,27 @@ export default function Hero() {
   }, [isMobile])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-6xl mx-auto text-center z-10">
+    <section className="relative min-h-screen flex items-center md:justify-center justify-start px-4 pt-24 md:pt-0">
+      <div className="max-w-6xl mx-auto text-center z-10 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
           <motion.h1 
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6"
+            className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6"
             animate={{ 
               textShadow: TEXT_GLOW_ANIMATION
             }}
             transition={{ duration: 5, repeat: Infinity }}
           >
             <span 
-              className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent cursor-pointer"
+              className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent cursor-pointer flex flex-col md:inline"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Fletcher Bonds
+              <span className="block md:inline">Fletcher</span>
+              <span className="block md:inline md:ml-4">Bonds</span>
             </span>
           </motion.h1>
           

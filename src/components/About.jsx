@@ -82,7 +82,7 @@ export default function About() {
               Microsoft Server products, macOS, iOS, Android, and cloud technologies.
             </motion.p>
             <motion.p 
-              className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed mb-4 md:mb-6"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
@@ -92,7 +92,7 @@ export default function About() {
               developer to create amazing things.
             </motion.p>
             <motion.p 
-              className="text-lg md:text-xl text-gray-300 leading-relaxed"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.7, duration: 0.8 }}
