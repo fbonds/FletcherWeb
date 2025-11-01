@@ -1,12 +1,23 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import HolographicGif from './HolographicGif'
+import { useIsMobile } from '../hooks/useMediaQuery'
 
 export default function About() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [hoveredSkill, setHoveredSkill] = useState(null)
+  const isMobile = useIsMobile()
+  
+  useEffect(() => {
+    if (hoveredSkill && isMobile) {
+      const timer = setTimeout(() => {
+        setHoveredSkill(null)
+      }, 3000)
+      return () => clearTimeout(timer)
+    }
+  }, [hoveredSkill, isMobile])
 
   const skills = [
     { 
@@ -107,23 +118,35 @@ export default function About() {
             <h3 className="text-2xl sm:text-3xl font-bold mb-6 md:mb-8 text-center text-purple-400 glow-text-blue">
               Technology Experience
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
-                  className="glass-panel p-3 sm:p-4 md:p-6 text-center hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                  className="glass-panel overflow-hidden text-center hover:bg-white/10 transition-all duration-300 cursor-pointer"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                   transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: isMobile ? 1 : 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  onMouseEnter={() => setHoveredSkill(skill)}
-                  onMouseLeave={() => setHoveredSkill(null)}
-                  onClick={() => setHoveredSkill(hoveredSkill?.name === skill.name ? null : skill)}
+                  onMouseEnter={() => !isMobile && setHoveredSkill(skill)}
+                  onMouseLeave={() => !isMobile && setHoveredSkill(null)}
+                  onClick={() => isMobile && setHoveredSkill(hoveredSkill?.name === skill.name ? null : skill)}
                 >
-                  <span className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold" style={{ color: skill.color }}>
-                    {skill.name}
-                  </span>
+                  {hoveredSkill?.name === skill.name && isMobile ? (
+                    <div className="relative w-full" style={{ paddingBottom: '75%' }}>
+                      <img 
+                        src={skill.gifUrl} 
+                        alt={skill.name}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="p-3 sm:p-4 md:p-6">
+                      <span className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold" style={{ color: skill.color }}>
+                        {skill.name}
+                      </span>
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>

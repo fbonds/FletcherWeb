@@ -29,14 +29,30 @@ export default function Hero() {
     setGreeting(getPersonalizedGreeting())
   }, [])
   
-  useEffect(() => {
+  const handleNameClick = useCallback(() => {
     if (isMobile) {
-      setIsHovering(true)
+      setIsHovering(!isHovering)
     }
-  }, [isMobile])
+  }, [isMobile, isHovering])
+  
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isMobile && isHovering) {
+        const target = event.target
+        const isNameElement = target.closest('.hero-name')
+        const isImageElement = target.closest('.hero-image')
+        if (!isNameElement || isImageElement) {
+          setIsHovering(false)
+        }
+      }
+    }
+    
+    document.addEventListener('click', handleClickOutside)
+    return () => document.removeEventListener('click', handleClickOutside)
+  }, [isMobile, isHovering])
 
   return (
-    <section className="relative min-h-screen flex items-center md:justify-center justify-start px-4 pt-24 md:pt-0">
+    <section className="relative min-h-screen flex items-start md:items-center md:justify-center justify-center px-4 pt-[20vh] md:pt-0">
       <div className="max-w-6xl mx-auto text-center z-10 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,16 +60,17 @@ export default function Hero() {
           transition={{ duration: 1 }}
         >
           <motion.h1 
-            className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6"
+            className="text-6xl sm:text-7xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-6"
             animate={{ 
               textShadow: TEXT_GLOW_ANIMATION
             }}
             transition={{ duration: 5, repeat: Infinity }}
           >
             <span 
-              className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent cursor-pointer flex flex-col md:inline"
+              className="hero-name bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent cursor-pointer flex flex-col md:inline"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
+              onClick={handleNameClick}
             >
               <span className="block md:inline">Fletcher</span>
               <span className="block md:inline md:ml-4">Bonds</span>
@@ -141,7 +158,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/50 to-gray-950 pointer-events-none" />
       
       <motion.div
-        className="fixed left-0 bottom-0 z-20 pointer-events-none"
+        className="hero-image fixed left-0 bottom-0 z-20"
         initial={{ y: '100%' }}
         animate={{ y: isHovering ? '0%' : '100%' }}
         transition={{ 
@@ -152,13 +169,14 @@ export default function Hero() {
         }}
         style={{ 
           height: 'auto',
-          maxHeight: isMobile ? '50vh' : '70vh'
+          maxHeight: isMobile ? '50vh' : '70vh',
+          pointerEvents: isMobile ? 'auto' : 'none'
         }}
       >
         <img 
           src={profileImage} 
           alt="Fletcher Bonds"
-          className="h-full w-auto object-contain object-bottom"
+          className="h-full w-auto object-contain object-bottom cursor-pointer"
           style={{ maxHeight: isMobile ? '50vh' : '70vh' }}
         />
       </motion.div>
