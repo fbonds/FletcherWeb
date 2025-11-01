@@ -64,15 +64,15 @@ export default function About() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center glow-text">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center glow-text">
             <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
 
-          <div className="glass-panel p-8 md:p-12 mb-12">
+          <div className="glass-panel p-4 sm:p-6 md:p-8 lg:p-12 mb-8 md:mb-12">
             <motion.p 
-              className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed mb-4 md:mb-6"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -104,22 +104,24 @@ export default function About() {
           </div>
 
           <div>
-            <h3 className="text-3xl font-bold mb-8 text-center text-purple-400 glow-text-blue">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 md:mb-8 text-center text-purple-400 glow-text-blue">
               Technology Experience
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
-                  className="glass-panel p-6 text-center hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                  className="glass-panel p-3 sm:p-4 md:p-6 text-center hover:bg-white/10 transition-all duration-300 cursor-pointer"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                   transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
                   whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   onMouseEnter={() => setHoveredSkill(skill)}
                   onMouseLeave={() => setHoveredSkill(null)}
+                  onClick={() => setHoveredSkill(hoveredSkill?.name === skill.name ? null : skill)}
                 >
-                  <span className="text-xl font-semibold" style={{ color: skill.color }}>
+                  <span className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold" style={{ color: skill.color }}>
                     {skill.name}
                   </span>
                 </motion.div>

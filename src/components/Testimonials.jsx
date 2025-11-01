@@ -1,6 +1,7 @@
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useMotionValue } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState, useEffect, useCallback } from 'react'
+import { useIsMobile } from '../hooks/useMediaQuery'
 
 const TESTIMONIALS = [
   {
@@ -179,6 +180,8 @@ export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const [tagCounts, setTagCounts] = useState({})
+  const isMobile = useIsMobile()
+  const dragX = useMotionValue(0)
 
   useEffect(() => {
     const randomStart = Math.floor(Math.random() * TESTIMONIALS.length)
@@ -221,6 +224,16 @@ export default function Testimonials() {
   const handleDotClick = useCallback((index) => {
     setCurrentIndex(index)
   }, [])
+  
+  const handleDragEnd = useCallback(() => {
+    const x = dragX.get()
+    if (x < -50) {
+      handleNext()
+    } else if (x > 50) {
+      handlePrevious()
+    }
+    dragX.set(0)
+  }, [dragX, handleNext, handlePrevious])
 
   const currentTestimonial = TESTIMONIALS[currentIndex]
 
@@ -232,43 +245,43 @@ export default function Testimonials() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center glow-text">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center glow-text">
             <span className="bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
               What People Say
             </span>
           </h2>
 
           {/* Featured Quotes */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12">
             {FEATURED_QUOTES.map((featured, index) => (
               <motion.div
                 key={featured.text}
-                className="glass-panel px-6 py-3"
+                className="glass-panel px-4 py-2 md:px-6 md:py-3"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{ delay: 0.2 + index * 0.1, duration: 0.5 }}
               >
-                <span className="text-cyan-400 font-semibold text-sm">"{featured.text}"</span>
+                <span className="text-cyan-400 font-semibold text-xs md:text-sm">"{featured.text}"</span>
               </motion.div>
             ))}
           </div>
 
           {/* Key Themes/Tags */}
           <motion.div
-            className="mb-12"
+            className="mb-8 md:mb-12"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <h3 className="text-2xl font-bold mb-6 text-center text-purple-400">Key Strengths</h3>
-            <div className="flex flex-wrap justify-center gap-3">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center text-purple-400">Key Strengths</h3>
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3">
               {ALL_TAGS.map((tag) => {
                 const count = tagCounts[tag] || 0
                 const isActive = currentTestimonial?.tags.includes(tag)
                 return (
                   <motion.div
                     key={tag}
-                    className={`glass-panel px-4 py-2 text-sm transition-all duration-300 ${
+                    className={`glass-panel px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm transition-all duration-300 ${
                       isActive ? 'neon-border' : ''
                     }`}
                     style={{
@@ -299,7 +312,14 @@ export default function Testimonials() {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            <div className="glass-panel p-8 md:p-12 min-h-[400px] flex flex-col justify-between">
+            <motion.div 
+              className="glass-panel p-4 sm:p-6 md:p-8 lg:p-12 min-h-[350px] md:min-h-[400px] flex flex-col justify-between"
+              drag={isMobile ? "x" : false}
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={handleDragEnd}
+              style={{ x: dragX }}
+            >
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentIndex}
@@ -308,23 +328,23 @@ export default function Testimonials() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="mb-6">
-                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 italic">
+                  <div className="mb-4 md:mb-6">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed mb-4 md:mb-6 italic">
                       "{currentTestimonial.quote}"
                     </p>
                   </div>
                   
-                  <div className="flex items-start justify-between flex-wrap gap-4">
+                  <div className="flex items-start justify-between flex-wrap gap-3 md:gap-4">
                     <div>
-                      <p className="text-xl font-bold text-purple-400">{currentTestimonial.name}</p>
-                      <p className="text-sm text-gray-400">{currentTestimonial.title}</p>
+                      <p className="text-base sm:text-lg md:text-xl font-bold text-purple-400">{currentTestimonial.name}</p>
+                      <p className="text-xs sm:text-sm text-gray-400">{currentTestimonial.title}</p>
                       <p className="text-xs text-gray-500 mt-1">{currentTestimonial.relationship} • {currentTestimonial.date}</p>
                     </div>
-                    <div className="flex gap-2 flex-wrap">
+                    <div className="flex gap-1.5 md:gap-2 flex-wrap">
                       {currentTestimonial.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="glass-panel px-3 py-1 text-xs text-cyan-400"
+                          className="glass-panel px-2 py-0.5 md:px-3 md:py-1 text-xs text-cyan-400"
                         >
                           {tag}
                         </span>
@@ -335,29 +355,29 @@ export default function Testimonials() {
               </AnimatePresence>
 
               {/* Navigation Controls */}
-              <div className="flex items-center justify-between mt-8 pt-6 border-t border-white/10">
+              <div className="flex items-center justify-between mt-6 md:mt-8 pt-4 md:pt-6 border-t border-white/10">
                 <button
                   onClick={handlePrevious}
-                  className="glass-panel p-3 hover:bg-white/10 transition-all duration-300 neon-border"
+                  className="glass-panel p-2 md:p-3 hover:bg-white/10 transition-all duration-300 neon-border"
                   style={{ '--glow-color': '#8b5cf6' }}
                   aria-label="Previous testimonial"
                 >
-                  <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 md:w-6 md:h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 md:gap-3 flex-col sm:flex-row">
                   {/* Dots Indicator */}
-                  <div className="flex gap-2">
+                  <div className="flex gap-1.5 md:gap-2 overflow-x-auto max-w-[200px] md:max-w-none">
                     {TESTIMONIALS.map((_, index) => (
                       <button
                         key={index}
                         onClick={() => handleDotClick(index)}
-                        className={`transition-all duration-300 rounded-full ${
+                        className={`transition-all duration-300 rounded-full flex-shrink-0 ${
                           index === currentIndex 
-                            ? 'w-8 h-2 bg-purple-500' 
-                            : 'w-2 h-2 bg-gray-600 hover:bg-gray-500'
+                            ? 'w-6 md:w-8 h-1.5 md:h-2 bg-purple-500' 
+                            : 'w-1.5 md:w-2 h-1.5 md:h-2 bg-gray-600 hover:bg-gray-500'
                         }`}
                         aria-label={`Go to testimonial ${index + 1}`}
                       />
@@ -367,32 +387,32 @@ export default function Testimonials() {
                   {/* Surprise Me Button */}
                   <button
                     onClick={handleSurpriseMe}
-                    className="glass-panel px-4 py-2 hover:bg-white/10 transition-all duration-300 neon-border ml-4"
+                    className="glass-panel px-3 py-1.5 md:px-4 md:py-2 hover:bg-white/10 transition-all duration-300 neon-border sm:ml-4"
                     style={{ '--glow-color': '#ec4899' }}
                   >
-                    <span className="text-pink-400 text-sm font-semibold">Surprise Me</span>
+                    <span className="text-pink-400 text-xs md:text-sm font-semibold">Surprise Me</span>
                   </button>
                 </div>
 
                 <button
                   onClick={handleNext}
-                  className="glass-panel p-3 hover:bg-white/10 transition-all duration-300 neon-border"
+                  className="glass-panel p-2 md:p-3 hover:bg-white/10 transition-all duration-300 neon-border"
                   style={{ '--glow-color': '#8b5cf6' }}
                   aria-label="Next testimonial"
                 >
-                  <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 md:w-6 md:h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
 
               {/* Testimonial Counter */}
-              <div className="text-center mt-4">
-                <span className="text-xs text-gray-500">
+              <div className="text-center mt-3 md:mt-4">
+                <span className="text-xs md:text-sm text-gray-500">
                   {currentIndex + 1} of {TESTIMONIALS.length} recommendations
                 </span>
               </div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>

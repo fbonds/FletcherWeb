@@ -23,14 +23,14 @@ export default function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 glow-text">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 glow-text">
             <span className="bg-gradient-to-r from-pink-500 to-cyan-400 bg-clip-text text-transparent">
               Let&apos;s Connect
             </span>
           </h2>
 
           <motion.p 
-            className="text-xl text-gray-300 mb-12"
+            className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 md:mb-12"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -38,7 +38,7 @@ export default function Contact() {
             Curious about AI-assisted development? Let&apos;s connect and explore the possibilities.
           </motion.p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
             {socials.map((social, index) => {
               const Component = social.url ? motion.a : motion.button
               const props = social.url 
@@ -49,16 +49,17 @@ export default function Contact() {
                 <Component
                   key={social.name}
                   {...props}
-                  className="glass-panel p-6 hover:bg-white/10 transition-all duration-300 group"
+                  className="glass-panel p-4 md:p-6 hover:bg-white/10 transition-all duration-300 group"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
                   whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <div className="text-4xl mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-3xl md:text-4xl mb-1 md:mb-2 group-hover:scale-110 transition-transform">
                     {social.icon}
                   </div>
-                  <div className="text-sm font-semibold" style={{ color: social.color }}>
+                  <div className="text-xs md:text-sm font-semibold" style={{ color: social.color }}>
                     {social.name}
                   </div>
                 </Component>
@@ -67,21 +68,21 @@ export default function Contact() {
           </div>
 
           <motion.div
-            className="glass-panel p-8 inline-block"
+            className="glass-panel p-4 md:p-8 inline-block max-w-full"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
             transition={{ delay: 0.9, duration: 0.5 }}
           >
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-xs md:text-sm">
               © 2025 Fletcher Bonds. All rights reserved.
             </p>
-            <p className="text-cyan-400 text-xs mt-2">
+            <p className="text-cyan-400 text-xs md:text-sm mt-2">
               Built with{' '}
               <a 
                 href="https://code.visualstudio.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-cyan-300 underline transition-colors"
+                className="hover:text-cyan-300 underline transition-colors break-words"
               >
                 VS Code
               </a>
