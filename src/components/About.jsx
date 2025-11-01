@@ -154,8 +154,8 @@ export default function About() {
         </motion.div>
       </div>
 
-      {/* Holographic GIF Display */}
-      {hoveredSkill && (
+      {/* Holographic GIF Display - Desktop only */}
+      {hoveredSkill && !isMobile && (
         <HolographicGif
           isVisible={!!hoveredSkill}
           gifUrl={hoveredSkill.gifUrl}
