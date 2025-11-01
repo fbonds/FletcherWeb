@@ -338,7 +338,6 @@ export default function Testimonials() {
                     <div>
                       <p className="text-base sm:text-lg md:text-xl font-bold text-purple-400">{currentTestimonial.name}</p>
                       <p className="text-xs sm:text-sm text-gray-400">{currentTestimonial.title}</p>
-                      <p className="text-xs text-gray-500 mt-1">{currentTestimonial.relationship} • {currentTestimonial.date}</p>
                     </div>
                     <div className="flex gap-1.5 md:gap-2 flex-wrap">
                       {currentTestimonial.tags.map((tag) => (
