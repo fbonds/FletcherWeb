@@ -103,14 +103,13 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.5, duration: 0.8 }}
             >
-              <span className="text-xl md:text-2xl flex-shrink-0">{greeting.emoji}</span>
               <motion.p
-                className="text-sm sm:text-base md:text-lg text-cyan-400 font-mono text-left"
+                className="text-sm sm:text-base md:text-lg text-cyan-400 font-mono text-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.7, duration: 1 }}
               >
-                <span className="text-purple-400">⟩</span> {greeting.text}
+                {greeting.text}
               </motion.p>
             </motion.div>
           )}

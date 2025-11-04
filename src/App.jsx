@@ -1,3 +1,5 @@
+import Navigation from './components/Navigation'
+import SEO from './components/SEO'
 import Scene3D from './components/Scene3D'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,14 +9,18 @@ import Chatbot from './components/Chatbot'
 
 function App() {
   return (
-    <div className="relative">
-      <Scene3D />
-      <Hero />
-      <About />
-      <Testimonials />
-      <Contact />
-      <Chatbot />
-    </div>
+    <>
+      <SEO />
+      <div className="relative">
+        <Navigation />
+        <Scene3D />
+        <Hero />
+        <About />
+        <Testimonials />
+        <Contact />
+        <Chatbot />
+      </div>
+    </>
   )
 }
 

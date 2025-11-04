@@ -451,8 +451,8 @@ export default function Chatbot() {
     if (!isPositive && previousMessage) {
       try {
         // Using a simple mailto approach - in production, you'd want a backend API
-        const subject = encodeURIComponent('FLETCHERBONDS.COM - Chat Box Issue')
-        const body = encodeURIComponent(
+        const _subject = encodeURIComponent('FLETCHERBONDS.COM - Chat Box Issue')
+        const _body = encodeURIComponent(
           `User Feedback: Thumbs Down\n\n` +
           `Question: ${previousMessage.text}\n\n` +
           `Response: ${message.text}\n\n` +
