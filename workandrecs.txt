@@ -1,0 +1,561 @@
+gies
+professional experienced in a broad range of technological areas across platforms
+inclusive of UNIX, Linux, OS X, Windows, iOS, Android and Cloud.
+Experience
+Ad Hoc LLC, Senior QA Engineer June 2023 - Present
+• • Drives quality assurance strategy for the Office of Head Start TTA
+Hub, ensuring software reliability and usability for critical government services.
+• • Develops and refines testing methodologies, including test
+automation with JavaScript and Playwright, to improve efficiency and test
+coverage.
+• • Leads small-scale QA initiatives and process improvements,
+reducing inefficiencies and enhancing QA workflows.
+• • strategies.
+Works closely with stakeholders and cross-functional teams to
+ensure alignment with project goals, presenting comprehensivExperience
+
+Fletcher Bonds
+Gig Harbor, WA | 253-202-6719 | fbonds@gmail.com | linkedin.com/in/fletcherbonds
+Summary
+Senior Quality Assurance & Test Engineering Professional with over 20 years of
+experience in software testing, quality strategy, and systems validation across diverse
+industries. Adept at QA process improvement, test planning, and stakeholder
+engagement in cloud-based and on-premise environments. Strong background in
+leading manual and automated testing initiatives, mentoring teams, and refining QA
+methodologies to ensure software meets and exceeds business and functional
+requirements. Adept in both leadership and individual contribution to and for all software
+quality management, systems administration and IT projects. Computing technoloe testing
+• • Previously enhanced testing frameworks for the Veterans
+Administration Health Enrollment project.
+RedLine Performance Solutions, Application Analyst February 2023 - June 2023
+• • Validated software functionality and reliability for NOAA's mission-
+critical Weather Service Alerts system.
+• • Conducted performance and vulnerability testing using JavaScript
+and K6.io to identify and mitigate security risks.
+• • Designed and executed detailed test plans and test cases,
+collaborating with developers to track and resolve issues in Jira.
+• • Created comprehensive documentation and test reports, improving
+process transparency and traceability.F5 Networks, QA Engineer III / Site Reliability Engineer July 2014 - October 2022
+• • Led manual and exploratory testing for the iHealth product across
+Windows, macOS, Linux, VMware, AWS, and Azure environments.
+• • Developed and maintained automated UI tests for a LAMP stack
+application using Python and Selenium, optimizing testing efficiency.
+• • As team SRE, managed system monitoring and incident escalation,
+ensuring 99.9% uptime of critical services.
+• • Recruited, trained, and mentored offshore QA personnel, fostering
+a collaborative and skilled global team.
+• • Authored extensive technical documentation in Confluence,
+streamlining knowledge sharing across teams.
+• • Participated in node.js test automation using Cypress and Mocha
+as well as REST API test automation utilizing Ruby & Selenium.
+• • Responsible for test suite development, testing, and other test-
+related activities for a Java-based/LAMP stack web application (ihealth.f5.com).
+• • teams.
+Provided internal consulting support for applications to other F5
+• • testing.
+Direct experience in Windows, macOS, Linux, Vmware, AWS &
+Azure, and F5 hardware/software systems (BigIP/TMOS) configuration and
+Topia Technology, QA Lead July 2013 - June 2014
+• • and server platforms.
+Owned the end-to-end testing process for desktop, mobile (iOS),
+• • Developed and maintained an automation framework using Python
+and Selenium, which was integrated with Testlink.
+• • Managed Mantis and Redmine bug-tracking databases and
+documented all test procedures on the Jira Wiki.
+• • Mentored QA staff on testing best practices and skill development.
+• • Reviewed feature specifications.
+• • Defined test methodology and tools.
+• • Performed REST API testing with Python.
+• • Performed WEB UI testing with Python & Selenium.
+• • Performed iOS testing with Xcode Instruments & Javascript.
+CHI-LLC, QA Lead August 2012 - July 2013
+• • Led a team of four QA engineers, enhancing project efficiency by
+implementing standardized QA methodologies.• • Led a team of four QA engineers, enhancing project efficiency by
+implementing standardized QA methodologies.
+• • Implemented the TestComplete automation framework to
+streamline testing processes and improve output quality.
+• • Integrated QA metrics into project management schedules to track
+progress and report on quality.
+• • Defined roles and responsibilities of QA Engineers.
+• • Recruited, Mentored and Trained QA Engineers.
+• • Monitored and Managed bug database.
+• • Worked with Dev/Project Management to maximize effectiveness.
+• • Created and executed automated test cases.
+• • Maintained test tools/systems.
+• • Implemented automatic build-triggered automated smoke tests.
+• • Continuously self-trained in related/supporting technologies.
+• • Reviewed feature specifications.
+• • of specifications.
+Interviewed developers responsible for feature creation in absence
+• • Created & maintained per feature test plans.
+• • Owned all Functional/Features Testing.
+• • Provided as-needed backup to technical phone support team for
+breaks, absence and vacations.
+Experis Technology Group, Software Test Engineer April 2012 - August 2012
+• • Manual and Automated testing of Amazon Kindle application on
+Android phones and tablets.
+• • Systems.
+Administration and troubleshooting of Windows and Ubuntu Linux
+• • Worked with Android SDK to install and debug custom applications
+on all versions of Android OS.
+FBI NGI Project (Safran), Test Engineer II September 2011 - April 2012
+• • Software Testing of Red Hat Enterprise Linux based product (LBI
+clearance held), including test authoring, test execution and live product tests
+with customer present.
+Ensynch (at Intel in DuPont, WA), Lab Systems Administrator January 2011 - October
+2011
+• • Computer Lab management and systems administration.• • Computer Lab management and systems administration.
+• • groups.
+Setting up server/network environments as required for multiple
+• • Deploying and Administering Windows and Debian Linux guest
+operating systems on VMWare VSphere.
+NAMI Sonoma County, Volunteer IT Tech July 2010 - December 2010
+• • Performed IT services on a volunteer basis including configuring
+printers and desktops, domain administration and general technical support.
+Netpulse, QA Engineer September 2009 - September 2010
+• • Senior member of QA dept at entertainment industry startup.
+• • Embedded Linux hardware/software implementation with support
+client/server environment.
+• • Test equipment ordering and installation.
+• • Test bench / lab administration.
+• • review.
+QA Wiki design, Test Plan authoring, Bug tracking, Specification
+• • Backup to IT/Support department.
+Standard Computing, Owner September 2008 - September 2009
+• • PC & Mac Computer Consulting specializing in Builds, Installs,
+Upgrades, Repairs, Networking, Tutoring and Consulting.
+Hewlett Packard Enterprise, Software Engineer II April 2007 - October 2008
+• • Software Testing position with the Storage Automation team testing
+SAN/NAS monitoring, configuration and deployment tools.
+Marchex, Software Test Engineer/Systems Administrator March 2005 - February 2007
+• • Software testing of SEO and Feed Aggregation products.
+• • Test responsibilities included: Authoring & executing test plans.
+• • Member of Performance Test Team primarily responsible for
+backend systems testing of Linux-based Java and Oracle system components.
+• • Systems: Debian Linux & Microsoft Windows XP.
+Cisco (Contract with Pure Networks), Software Test Engineer August 2004 - March
+2005
+• • Contract position testing home networking software and services.
+• • Test responsibilities include: Authoring & executing test plans/
+cases for Accessibility testing of client application & Datacenter testing of server
+application provisioning & logging.• • Test responsibilities include: Authoring & executing test plans/
+cases for Accessibility testing of client application & Datacenter testing of server
+application provisioning & logging.
+• • support.
+Built out of PCs for lab setup / install, image creation and lab
+• • FreeBSD.
+Systems: Microsoft Windows XP, Red Hat Enterprise Linux AS,
+TeleCommunications Systems Inc, Operations Test Engineer March 2004 - July 2004
+• • Customer-facing Test engineering project within the operations
+organization at TCS testing First Office Application rollouts to production network
+with customers and partners.
+• • Testing responsibilities include: Driving multi-vendor testing via
+teleconference, Authoring Test Plans and Systems Administration of test lab.
+• • Systems: Microsoft Windows XP, SUN Solaris 8, Red Hat
+Enterprise Linux ES 2.1.
+Excell Data Corp @ Microsoft, Software Test Engineer December 2003 - March 2004
+• • Contract position with Microsoft Reliability Analysis System team
+testing Microsoft hosted .NET web service providing collection, analysis and
+reporting of Windows Server & Service components.
+• • Testing responsibilities include Client, Server and DB testing, test
+plan & case authoring, build propagation and test lab management.
+• • Systems: Microsoft Windows XP, Microsoft Windows 2000,
+Microsoft Windows 2003.
+Excell Data Corp @ Microsoft, Software Test Lead Engineer July 2003 - September
+2003
+• • Contract position with Microsoft Solution Accelerator for UNIX
+Migration team leading test effort in the creation of database migration guidance.
+• • Specific project encompassed Solaris-based Sybase ASE migration
+to Windows 2003-based MS SQL 2000 platform.
+Yoh, A Day & Zimmermann Company, Software Test Engineer January 2003 - July
+2003
+• • Contract position with Operations Systems Support team testing
+NMS & SNMP software on Solaris 2.6 & 8.
+• • configuration.
+Lab design & management for three computer labs inclusive of
+network setup, system purchase/installation and software installation/
+• • Solaris systems administration & support for Test server resources.
+• • PERL & Bash shell script authoring.
+• • Products used & tested: Mercury Interactive Test Director, Solstice
+Enterprise Manager and BMC Patrol & Performance suite.• • Products used & tested: Mercury Interactive Test Director, Solstice
+Enterprise Manager and BMC Patrol & Performance suite.
+• • Systems: Microsoft Windows 2000, SUN Solaris 2.6.
+ViAir, Software Test Engineer September 2000 - October 2002
+• • Wireless Web application testing inclusive of WML, HDML, JSP &
+Java based products and services for PCs, RIM Blackberries and WAP-enabled
+cellular phones.
+• • Tester for Wireless Inbox product coordinating and managing major
+component test coverage.
+• • Test plan authoring.
+• • Solaris System Administrator managing six SUN servers.
+• • Test lab management responsible for setup, maintenance and
+staffing of test bed staging and automation servers inclusive of IIS5, Oracle, MS
+SQL Server & Servletexec JSP server.
+• • Solaris 8.
+Systems: Microsoft Windows XP, Microsoft Windows 2000, SUN
+(Unnamed Company), Test Engineer April 1999 - September 2000
+• • Authored, Maintained & Executed Web-to-Host test plan areas:
+Unix Setup, Security and Java/WebObjects SDK.
+• • errors.
+Entered, tracked & evangelized software bugs & documentation
+• • Maintained and Administered test systems including: Microsoft
+Windows NT4, Microsoft Windows 2000, SUN Solaris 2.6, SUN Solaris 2.7,
+HPUX 11.x and Red Hat Linux 6.0.
+Volt, Software Test Engineer March 1998 - April 1999
+• • Participated in ZAW/TCO initiatives as part of the Internet Explorer
+Administrators Kit test team.
+• • and Y2K.
+Authored Maintained & Executed TCO test plan areas: BVT, Stress
+• • Test OS/platforms managed: Microsoft NT 4, Microsoft Windows
+2000 Alpha, Microsoft Windows 95 (Gold, OSR 2.x) & 98.
+• • Server platforms included both Intel & Alpha based systems.
+Volt, Software Test Engineer June 1997 - March 1998
+• • test team.
+Participated in 3rd Party Network testing as part of the Windows 98
+• • Tested Terminal Emulation products over Windows 98 networking
+protocols ensuring continued interoperability with feature changes therein.• • Tested Terminal Emulation products over Windows 98 networking
+protocols ensuring continued interoperability with feature changes therein.
+• • Authored, Maintained & Executed terminal emulation test plans for
+products: IBM Personal Communications Gateway, Attachmate Extra product
+line, Wall Data Rumba product line, WRQ Reflection product line.
+• • Administered lab test systems: Microsoft SNA Server, Novell
+Netware for SAA Gateway, IBM 3174 Cluster Controller.
+• • Credited contributor to Windows 98 Resource Kit.
+Wall Data, Senior Technical Support Engineer November 1995 - June 1997
+• • Rumba products.
+Escalations support point for corporate IS/IT managers using
+• • Team resource and technical mentor.
+• • Technical Support.
+Winner 1997 VP's Customer Satisfaction Award for Outstanding
+Attachmate, Support Specialist II March 1993 - November 1995
+• • Senior technical analyst position supporting IT/IS managers and
+professionals using Extra products.
+• • CompuServe Forum sysop.
+• • Authored technical articles on Extra products.
+• • Corporate beta tester for Windows 95.
+Genelex, Network Administrator February 1991 - March 1993
+• • Administered Novell Netware network.
+• • Provided PC Help desk services & support.
+• • Performed office management and bookkeeping functions.
+Education & Professional Certifications
+University of Washington (2000-2023)
+• • 2000-2001: Object-Oriented Programming theory with UML.
+• • 2003-2004: UNIX/Linux Systems Administration (certification
+program).
+• • 2005-2006: Writing Fiction (certification program).
+• • 2017: Ruby Programming classes.
+• • 2018: Project Management (certificate program).
+• • 2019: Javascript Browser programming.• • 2020: Javascript for Front-End Applications.
+• • 2020-2021: Writing (certificate program).
+• • 2022-2023: Cybersecurity (certificate program).
+Certified Associate in Project Management (CAPM) | Project Management Institute
+Issued May 2018 - Expires May 2023 (Certification 2210708)
+Certified ScrumMaster (CSM) | Scrum Alliance
+Issued Mar 2019 - Expires Mar 2021 (Certification 1031674)
+Microsoft Certified: Azure Fundamentals | Microsoft
+RPT Training: Terraform Fundamentals - River Point Technology (Issued Nov 2021 -
+Expires Nov 2023)
+AZ-104T00 - Microsoft Azure Administrator - New Horizons Computer Learning Centers
+Strengths Resume - Scoutible
+GDPR Compliance: Essential Training - LinkedIn
+DevOps Foundations: Site Reliability Engineering - LinkedIn
+Site Reliability Engineering: Service-Level Agreements and Objectives - LinkedIn
+Writing with Impact - LinkedIn
+Technical Skills
+Test Automation: Selenium, Playwright, Cypress, Appium, K6.io, TestComplete, JMeter
+Languages & Scripting: Python (Pytest), JavaScript, SQL, Shell Scripting (Bash)
+API & BDD Tools: Postman, REST-Assured, Cucumber (Gherkin)
+Testing Methodologies: Manual & Exploratory Testing, API Testing, Performance &
+Load Testing, Vulnerability Testing, End-to-End (E2E), Regression, System Integration,
+BDD/TDD
+CI/CD & DevOps: Jenkins, GitLab CI, Git, GitHub, Docker, Kubernetes (K8s), Terraform
+Project & Test Mgmt: Jira, Confluence, TestRail, Xray, Zephyr, Testlink, Agile/Scrum
+Methodologies
+Cloud & Virtualization: Amazon Web Services (AWS), Microsoft Azure, VMware
+vSphereOperating Systems: Linux (Red Hat, Debian, Ubuntu), Windows, macOS, Android, iOS
+Other Skills: Kanban, Scrum, HTML, Web Testing, Mobile Testing, Functional Testing,
+Software Development Life Cycle (SDLC)  Recommendations
+
+
+
+Received
+Received
+Given
+Given
+Pending
+Pending
+* 		
+* ￼
+* 		   Dan Munz Dan Munz · 1stFirst degree connection  Public service-oriented digital leader. Democracy believer. Spreadsheet sommelier.Public service-oriented digital leader. Democracy believer. Spreadsheet sommelier.  May 31, 2024, Dan was senior to Fletcher but didn't manage Fletcher directlyMay 31, 2024, Dan was senior to Fletcher but didn't manage Fletcher directly 
+    * 		 All LinkedIn membersShow Dan Munz recommendation to All LinkedIn members     
+        * 		Fletcher's a talented, experienced engineer and technologist, willing and able to apply his varied skillset to a diverse set of challenges, and pick up new skills and techniques as the work demands. His combination of expertise and curiosity is an asset to any team! Fletcher's a talented, experienced engineer and technologist, willing and able to apply his varied skillset to a diverse set of challenges, and pick up new skills and techniques as the work demands. His combination of expertise and curiosity is an asset to any team!
+* 		
+* 		      
+* ￼
+* 		   Heather Justice Heather Justice · 1stFirst degree connection  Sr Product Manager | Skillful organizer focused on impactful user-centric outcomesSr Product Manager | Skillful organizer focused on impactful user-centric outcomes  May 30, 2024, Heather worked with Fletcher on the same teamMay 30, 2024, Heather worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Heather Justice recommendation to All LinkedIn members     
+        * 		I worked with Fletcher on a VA Health Enrollment contract. Our team was responsible for the Veteran Health care online application and the Program of Comprehensive Assistance for Family Caregivers online application. 
+        * 		Fletcher was a great partner and easy to work with. Fletcher's experience was evident in his approach to ensuring high quality and integrity in our products. 
+        * 		Fletcher demonstrated a deep understanding of the complexities of our forms and the Veteran audience they serve, ensuring that all functionalities were rigorously tested and compliant with VA.gov standards. Fletcher proactively identified potential issues and suggested improvements where possible, which contributed to the success of the team.
+        * 		I would definitely recommend Fletcher for any QA/Senior QA role with confidence that he will rise to the occasion with expertise and professionalism, becoming an invaluable asset to the team. I worked with Fletcher on a VA Health Enrollment contract. Our team was responsible for the Veteran Health care online application and the Program of Comprehensive Assistance for Family Caregivers online application. Fletcher was a great partner and easy to work with. Fletcher's experience was evident in his approach to ensuring high quality and integrity in our products. Fletcher demonstrated a deep understanding of the complexities of our forms and the Veteran audience they serve, ensuring that all functionalities were rigorously tested and compliant with VA.gov standards. Fletcher proactively identified potential issues and suggested improvements where possible, which contributed to the success of the team. I would definitely recommend Fletcher for any QA/Senior QA role with confidence that he will rise to the occasion with expertise and professionalism, becoming an invaluable asset to the team.
+* 		
+* 		      
+* ￼
+* 		   Josh Carroll Josh Carroll · 1stFirst degree connection  Systems EngineerSystems Engineer  June 17, 2023, Josh worked with Fletcher on the same teamJune 17, 2023, Josh worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Josh Carroll recommendation to All LinkedIn members     
+        * 		I am delighted to recommend Fletcher for any future application analyst / QA-related roles. Fletcher and I worked together for a few months on a project for a federal contract with NOAA. Aspects of the work were outside of Fletcher's comfort zone, but he rose to the challenge and coded some comprehensive tests with Grafana's K6 Cloud. His analytical approach and thorough QA expertise would make him a valuable addition to any organization. I am delighted to recommend Fletcher for any future application analyst / QA-related roles. Fletcher and I worked together for a few months on a project for a federal contract with NOAA. Aspects of the work were outside of Fletcher's comfort zone, but he rose to the challenge and coded some comprehensive tests with Grafana's K6 Cloud. His analytical approach and thorough QA expertise would make him a valuable addition to any organization.
+* 		
+* 		      
+* ￼
+* 		   Olga Mill Olga Mill · 1stFirst degree connection  Linux Application Admin at VUMC| Software Engineer at KORE Power | Embedded Linux Development | Project Management | TeachingLinux Application Admin at VUMC| Software Engineer at KORE Power | Embedded Linux Development | Project Management | Teaching  November 21, 2022, Olga worked with Fletcher on the same teamNovember 21, 2022, Olga worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Olga Mill recommendation to All LinkedIn members     
+        * 		I had a pleasure to work with Fletcher at F5; I must say he is a very detail oriented and very thorough and knowledgeable tester. He is also a great team player and does well under stress. He is also a skilled communicator and does very good while performing complex test procedures. Overall, he was a great colleague to me at F5. Hire him! I had a pleasure to work with Fletcher at F5; I must say he is a very detail oriented and very thorough and knowledgeable tester. He is also a great team player and does well under stress. He is also a skilled communicator and does very good while performing complex test procedures. Overall, he was a great colleague to me at F5. Hire him!
+* 		
+* 		      
+* ￼
+* 		   Scott Clark Scott Clark · 1stFirst degree connection  Swiss Army KnifeSwiss Army Knife  November 11, 2022, Scott worked with Fletcher but on different teamsNovember 11, 2022, Scott worked with Fletcher but on different teams 
+    * 		 All LinkedIn membersShow Scott Clark recommendation to All LinkedIn members     
+        * 		Had the pleasure of working alongside Fletcher throughout his tenure at F5. His ability to innovate through aversity is always present. Whether he is working in a subject area he has established expertise or those which he is new his continuous focus on moving the needle both for himself as well as the enterprise and those around him shines bright. Establishing maturity within an enterprise as modernization efforts encroach teams is tough. Through our co-worker journey Fletcher has established himself as a SME in multiple areas and a valued resource for others across the enterprise in CI/CD capabilities, testing frameworks, and team development. There is no doubt that I will again work alongside Fletcher looking forward to seeing his continued dedication and passion for his craft bring him exciting new opportunities. Had the pleasure of working alongside Fletcher throughout his tenure at F5. His ability to innovate through aversity is always present. Whether he is working in a subject area he has established expertise or those which he is new his continuous focus on moving the needle both for himself as well as the enterprise and those around him shines bright. Establishing maturity within an enterprise as modernization efforts encroach teams is tough. Through our co-worker journey Fletcher has established himself as a SME in multiple areas and a valued resource for others across the enterprise in CI/CD capabilities, testing frameworks, and team development. There is no doubt that I will again work alongside Fletcher looking forward to seeing his continued dedication and passion for his craft bring him exciting new opportunities.
+* 		
+* 		      
+* ￼
+* 		   Melissa Bohnenkamp Melissa Bohnenkamp · 1stFirst degree connection  Principal Software Engineer at F5Principal Software Engineer at F5  October 24, 2022, Melissa worked with Fletcher on the same teamOctober 24, 2022, Melissa worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Melissa Bohnenkamp recommendation to All LinkedIn members     
+        * 		Fletcher and I worked together for a couple years while I was a developer on the iHeath team and he's very personable and a team player. As a test engineer, he has a tremendous amount of domain knowledge which he brings to the projects he contributes to. He's diligent in his testing and finds subtle bugs (darn it, Fletcher!). Fletcher has also showed a great aptitude to learn, both as new features were developed and as the iHealth application was moved to the cloud, requiring a whole new set of skills and testing strategies. Fletcher and I worked together for a couple years while I was a developer on the iHeath team and he's very personable and a team player. As a test engineer, he has a tremendous amount of domain knowledge which he brings to the projects he contributes to. He's diligent in his testing and finds subtle bugs (darn it, Fletcher!). Fletcher has also showed a great aptitude to learn, both as new features were developed and as the iHealth application was moved to the cloud, requiring a whole new set of skills and testing strategies.
+* 		
+* 		      
+* ￼
+* 		   Jeffrey Pilik Jeffrey Pilik · 1stFirst degree connection  Senior Software Engineer PS at F5 NetworksSenior Software Engineer PS at F5 Networks  October 23, 2022, Jeffrey worked with Fletcher on the same teamOctober 23, 2022, Jeffrey worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Jeffrey Pilik recommendation to All LinkedIn members     
+        * 		Fletcher was a pleasure to work with and always very personable. He is very detail oriented and always ensured everything was accomplished promptly and properly. Fletcher was a pleasure to work with and always very personable. He is very detail oriented and always ensured everything was accomplished promptly and properly.
+* 		
+* 		      
+* ￼
+* 		   Andy Lin Andy Lin · 1stFirst degree connection  Software Engineer at F5 NetworksSoftware Engineer at F5 Networks  October 20, 2022, Andy worked with Fletcher on the same teamOctober 20, 2022, Andy worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Andy Lin recommendation to All LinkedIn members     
+        * 		I worked with Fletcher and he was always great at whatever testing was necessary, learning new techniques and patterns when needed, and making sure our production code was production ready. I worked with Fletcher and he was always great at whatever testing was necessary, learning new techniques and patterns when needed, and making sure our production code was production ready.
+* 		
+* 		      
+* ￼
+* 		   Tim Dean Tim Dean · 1stFirst degree connection  Systems Reliability EngineerSystems Reliability Engineer  October 20, 2022, Tim worked with Fletcher but on different teamsOctober 20, 2022, Tim worked with Fletcher but on different teams 
+    * 		 All LinkedIn membersShow Tim Dean recommendation to All LinkedIn members     
+        * 		Fletcher is easy to work with, and always focused on delivering quality work. His natural inquisitiveness pushes him to seek out and discover root cause for any issue at hand. This quality serves him well in both a test and support engineering capcity. Highly recommended. Fletcher is easy to work with, and always focused on delivering quality work. His natural inquisitiveness pushes him to seek out and discover root cause for any issue at hand. This quality serves him well in both a test and support engineering capcity. Highly recommended.
+* 		
+* 		      
+* ￼
+* 		   Jon Gross Jon Gross · 1stFirst degree connection  Engineering DirectorEngineering Director  October 19, 2022, Jon managed Fletcher directlyOctober 19, 2022, Jon managed Fletcher directly 
+    * 		 All LinkedIn membersShow Jon Gross recommendation to All LinkedIn members     
+        * 		Fletcher combines a number of essential qualities as a test engineer, among them: an obsession with the customer experience, a deep investment in doing extremely high quality work, an attention to detail, and a willingness to question everything.
+        * 		
+        * 		In addition to this, Fletcher delivers all these qualities in an easy-going, friendly, supportive approach to his work and his team mates.
+        * 		
+        * 		Whether it is digging deep into esoteric data dumps and data displays, or helping another team interface with his team, or answering production support questions, Fletcher is dependable, flexible, and always looking for the best outcome possible.
+        * 		
+        * 		I would highly recommend Fletcher in a role that requires the qualities listed above. Fletcher combines a number of essential qualities as a test engineer, among them: an obsession with the customer experience, a deep investment in doing extremely high quality work, an attention to detail, and a willingness to question everything. In addition to this, Fletcher delivers all these qualities in an easy-going, friendly, supportive approach to his work and his team mates. Whether it is digging deep into esoteric data dumps and data displays, or helping another team interface with his team, or answering production support questions, Fletcher is dependable, flexible, and always looking for the best outcome possible. I would highly recommend Fletcher in a role that requires the qualities listed above.
+* 		
+* 		      
+* ￼
+* 		   Ivy Cheung Ivy Cheung · 1stFirst degree connection  Technical Program Management | CSPO | CSM | PMPTechnical Program Management | CSPO | CSM | PMP  June 7, 2013, Ivy managed Fletcher directlyJune 7, 2013, Ivy managed Fletcher directly 
+    * 		 All LinkedIn membersShow Ivy Cheung recommendation to All LinkedIn members     
+        * 		Fletcher did an amazing job at CHI. He created a suite of test case automation scripts to speed up our testing process in a very short period of time. He is a quick learner and highly motivated to learn new technologies and all aspects of our software product. Fletcher is customer focused and contribute valuable input to improve user experience. Fletcher is reliable, bright and easy to work with. I enjoyed working with him and would not hesitate recommending him. Fletcher did an amazing job at CHI. He created a suite of test case automation scripts to speed up our testing process in a very short period of time. He is a quick learner and highly motivated to learn new technologies and all aspects of our software product. Fletcher is customer focused and contribute valuable input to improve user experience. Fletcher is reliable, bright and easy to work with. I enjoyed working with him and would not hesitate recommending him.
+* 		
+* 		      
+* ￼
+* 		   Michael Martin Michael Martin · 1stFirst degree connection  Senior Software Engineer II at Crystal DynamicsSenior Software Engineer II at Crystal Dynamics  June 4, 2013, Michael worked with Fletcher on the same teamJune 4, 2013, Michael worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Michael Martin recommendation to All LinkedIn members     
+        * 		Fletcher's various past experiences and desire to learn new technologies was instrumental in improving our QA process. Fletcher's attention to detail and desire for quality were unsurpassed. It was a pleasure working with him. Fletcher's various past experiences and desire to learn new technologies was instrumental in improving our QA process. Fletcher's attention to detail and desire for quality were unsurpassed. It was a pleasure working with him.
+* 		
+* 		      
+* ￼
+* 		   Michael Prittie Michael Prittie · 1stFirst degree connection  Designer/3D ArtistDesigner/3D Artist  June 3, 2013, Michael worked with Fletcher on the same teamJune 3, 2013, Michael worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Michael Prittie recommendation to All LinkedIn members     
+        * 		It was a pleasure to work with Fletcher at Chi. His attention to detail meant you could trust that his group would ensure our software releases achieved the highest level of quality. It was a pleasure to work with Fletcher at Chi. His attention to detail meant you could trust that his group would ensure our software releases achieved the highest level of quality.
+* 		
+* 		      
+* ￼
+* 		   Scott Jones Scott Jones · 1stFirst degree connection  Principal Software Engineer at MicrosoftPrincipal Software Engineer at Microsoft  June 3, 2013, Scott was senior to Fletcher but didn't manage Fletcher directlyJune 3, 2013, Scott was senior to Fletcher but didn't manage Fletcher directly 
+    * 		 All LinkedIn membersShow Scott Jones recommendation to All LinkedIn members     
+        * 		Fletcher was an oustanding hire at CHI-LLC. He made a unanimously good impression during interviews, combining a seasoned skillset with a realistic enthusiasm for the work. Fletcher's experience is deep and wide, and very appealing for a small company looking for those who can wear many hats. He has a knack for digging deep into technology to seek bedrock understanding. Equally, he has the solid judgment and interpersonal skills essential for managing a QA team. Fletcher is a true utility player and would be an asset to any organization needing one. Fletcher was an oustanding hire at CHI-LLC. He made a unanimously good impression during interviews, combining a seasoned skillset with a realistic enthusiasm for the work. Fletcher's experience is deep and wide, and very appealing for a small company looking for those who can wear many hats. He has a knack for digging deep into technology to seek bedrock understanding. Equally, he has the solid judgment and interpersonal skills essential for managing a QA team. Fletcher is a true utility player and would be an asset to any organization needing one.
+* 		
+* 		      
+* ￼
+* 		   Adam Handford Adam Handford · 1stFirst degree connection  Software EngineerSoftware Engineer  July 20, 2012, Adam worked with Fletcher on the same teamJuly 20, 2012, Adam worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Adam Handford recommendation to All LinkedIn members     
+        * 		Fletcher was able make an instant impact on a high visibility deliverable on a project with a very aggressive schedule and extremely steep ramp. His ability to quickly establish a strong product knowledge and maintain composure under intense customer scrutiny was exemplary. I would instantly recommend him for any position that required a candidate with the ability to ramp up quickly and yield immediate results. Fletcher was able make an instant impact on a high visibility deliverable on a project with a very aggressive schedule and extremely steep ramp. His ability to quickly establish a strong product knowledge and maintain composure under intense customer scrutiny was exemplary. I would instantly recommend him for any position that required a candidate with the ability to ramp up quickly and yield immediate results.
+* 		
+* 		      
+* ￼
+* 		   Don Mitchell Don Mitchell · 1stFirst degree connection  Business Leader | Trusted Advisor | InnovatorBusiness Leader | Trusted Advisor | Innovator  May 3, 2012, Don managed Fletcher directlyMay 3, 2012, Don managed Fletcher directly 
+    * 		 All LinkedIn membersShow Don Mitchell recommendation to All LinkedIn members     
+        * 		Fletcher was a good, steady Operations Test Engineer while we worked together. He grasped the new concepts of our Unix based system, and worked well within the team structure. He was enjoyable to have on the team. Fletcher was a good, steady Operations Test Engineer while we worked together. He grasped the new concepts of our Unix based system, and worked well within the team structure. He was enjoyable to have on the team.
+* 		
+* 		      Matthew Canfield    Matthew Canfield Matthew Canfield · 1stFirst degree connection  ACT Team at QualysACT Team at Qualys  April 28, 2012, Matthew worked with Fletcher on the same teamApril 28, 2012, Matthew worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Matthew Canfield recommendation to All LinkedIn members     
+        * 		Fletcher was a consistently reliable, conscientious and detail oriented oriented software tester at Morphotrak. He was a pleasure to work with and I'm sure his new team is lucky and fortunate to have him on board! Fletcher was a consistently reliable, conscientious and detail oriented oriented software tester at Morphotrak. He was a pleasure to work with and I'm sure his new team is lucky and fortunate to have him on board!
+* 		
+* 		      
+* ￼
+* 		   Chris Curwood Chris Curwood    · 1stFirst degree connection  Sr Solution Architect | Digital Transformation Lead ~ Opinions are my ownSr Solution Architect | Digital Transformation Lead ~ Opinions are my own  April 28, 2012, Chris worked with Fletcher on the same teamApril 28, 2012, Chris worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Chris Curwood recommendation to All LinkedIn members     
+        * 		It was a great pleasure working with Mr. Bonds. On our team, it was very easy to rely and depend on Fletcher in critical times of need because his work had so much quality and he was extremely reliable. It was easy to notice how intelligent he is and how quickly he would learn new materials. He regularly demonstrated his professionalism and worked extremely well during our acceptance test. MorphoTrak was proud to have his expertise demonstrated in front of the customer. I would gladly work alongside Fletcher in the future and recommend him to any team that is striving for success. It was a great pleasure working with Mr. Bonds. On our team, it was very easy to rely and depend on Fletcher in critical times of need because his work had so much quality and he was extremely reliable. It was easy to notice how intelligent he is and how quickly he would learn new materials. He regularly demonstrated his professionalism and worked extremely well during our acceptance test. MorphoTrak was proud to have his expertise demonstrated in front of the customer. I would gladly work alongside Fletcher in the future and recommend him to any team that is striving for success.
+* 		
+* 		      
+* ￼
+* 		   Mark A. Wright Mark A. Wright · 1stFirst degree connection  Full-Time MissionaryFull-Time Missionary  December 28, 2011, Mark A. was Fletcher’s clientDecember 28, 2011, Mark A. was Fletcher’s client 
+    * 		 All LinkedIn membersShow Mark A. Wright recommendation to All LinkedIn members     
+        * 		Fletcher was an excellent lab engineer. He has a wide range of programming skills coupled with the ability to quickly learn and master any new server architecture makes him an asset in any technical environment. He excels at configuring and architecting virtual environments and developing complex private cloud infrastructure. Fletcher was an excellent lab engineer. He has a wide range of programming skills coupled with the ability to quickly learn and master any new server architecture makes him an asset in any technical environment. He excels at configuring and architecting virtual environments and developing complex private cloud infrastructure.
+* 		
+* 		      
+* ￼
+* 		   Matt Teemer Matt Teemer · 1stFirst degree connection  Chief Information Officer at Silver Bay Seafoods & Orca Bay Foods LLCChief Information Officer at Silver Bay Seafoods & Orca Bay Foods LLC  March 16, 2011, Matt managed Fletcher directlyMarch 16, 2011, Matt managed Fletcher directly 
+    * 		 All LinkedIn membersShow Matt Teemer recommendation to All LinkedIn members     
+        * 		I knew Fletcher for several years at Microsoft prior to us working together on this team. During our time on the same project Fletcher proved what I already knew about him: he is an excellent test engineer. 
+        * 		 
+        * 		Fletcher is extremely detail oriented and thorough, key traits in a test environment. I would happily recommend him for any position and hope to work with him again in the future. I knew Fletcher for several years at Microsoft prior to us working together on this team. During our time on the same project Fletcher proved what I already knew about him: he is an excellent test engineer. Fletcher is extremely detail oriented and thorough, key traits in a test environment. I would happily recommend him for any position and hope to work with him again in the future.
+* 		
+* 		      
+* ￼
+* 		   Tom Wasner Tom Wasner · 1stFirst degree connection  Working on personal projectsWorking on personal projects  January 15, 2011, Tom was senior to Fletcher but didn't manage Fletcher directlyJanuary 15, 2011, Tom was senior to Fletcher but didn't manage Fletcher directly 
+    * 		 All LinkedIn membersShow Tom Wasner recommendation to All LinkedIn members     
+        * 		I first met Fletcher when he joined the Wall Data technical support department. He quickly proved himself an adept technologist as he got up to speed on our product. He is one of the few people that I know who can move from Windows, to UNIX/LINUX, to Apple products with ease. When I later worked with him at WRQ, he was the point contact for the Solaris version of the product and often was vital in setting up that environment for defect discovery and isolation. Fletch is also great at building internal networks with other functional areas in a company. This collaboration competency often makes him a key player to resolving issues in a cooperative and successful manner. I first met Fletcher when he joined the Wall Data technical support department. He quickly proved himself an adept technologist as he got up to speed on our product. He is one of the few people that I know who can move from Windows, to UNIX/LINUX, to Apple products with ease. When I later worked with him at WRQ, he was the point contact for the Solaris version of the product and often was vital in setting up that environment for defect discovery and isolation. Fletch is also great at building internal networks with other functional areas in a company. This collaboration competency often makes him a key player to resolving issues in a cooperative and successful manner.
+* 		
+* 		      
+* ￼
+* 		   Ramarao Babbellapati Ramarao Babbellapati · 1stFirst degree connection  Director Of Engineering at Wurl Director Of Engineering at Wurl   November 29, 2010, Ramarao worked with Fletcher on the same teamNovember 29, 2010, Ramarao worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Ramarao Babbellapati recommendation to All LinkedIn members     
+        * 		Fletcher is a very methodical QA professional. He is very detail-oriented and extremely good at diagnosing and troubleshooting issues. His problem reports include a lot of useful details that make the job of developers very easy. His scripting and automation skills helped our team a lot during media delivery trials at Netpulse. I wish him all the success in all future endeavors. Fletcher is a very methodical QA professional. He is very detail-oriented and extremely good at diagnosing and troubleshooting issues. His problem reports include a lot of useful details that make the job of developers very easy. His scripting and automation skills helped our team a lot during media delivery trials at Netpulse. I wish him all the success in all future endeavors.
+* 		
+* 		      
+* ￼
+* 		   Darla Lovrin Darla Lovrin · 1stFirst degree connection  Staff Production Engineer, Industrial Light & Magic | ex-Pixar, ex-AppleStaff Production Engineer, Industrial Light & Magic | ex-Pixar, ex-Apple  October 5, 2010, Darla worked with Fletcher on the same teamOctober 5, 2010, Darla worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Darla Lovrin recommendation to All LinkedIn members     
+        * 		Fletcher's expertise with both hardware and software were very valuable to our team. He generously shared his Linux knowledge and helpful IT tips. His strong technical depth allowed him to tackle a variety of IT and QA tasks for Netpulse. And he was always pleasant to work with! Fletcher's expertise with both hardware and software were very valuable to our team. He generously shared his Linux knowledge and helpful IT tips. His strong technical depth allowed him to tackle a variety of IT and QA tasks for Netpulse. And he was always pleasant to work with!
+* 		
+* 		      
+* ￼
+* 		   Vartan Duvalyan Vartan Duvalyan · 1stFirst degree connection  Retired Software EngineerRetired Software Engineer  October 1, 2010, Vartan worked with Fletcher on the same teamOctober 1, 2010, Vartan worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Vartan Duvalyan recommendation to All LinkedIn members     
+        * 		Fletcher is a strong engineer, easy to work with, positive and very professional. His knowledge of Linux OS and hardware was extremely helpful when dialing with complicated technical problems. It is my pleasure to recommend Fletcher for an engineering opportunity matching his skills. Fletcher is a strong engineer, easy to work with, positive and very professional. His knowledge of Linux OS and hardware was extremely helpful when dialing with complicated technical problems. It is my pleasure to recommend Fletcher for an engineering opportunity matching his skills.
+* 		
+* 		      
+* ￼
+* 		   Ryan Kelly Ryan Kelly · 1stFirst degree connection  CEO & Founding Partner at WSI Smart Marketing | AI-Driven Marketing Strategist | International Speaker & Educator | Community Builder | Helping Businesses Turn Strategy into RevenueCEO & Founding Partner at WSI Smart Marketing | AI-Driven Marketing Strategist | International Speaker & Educator | Community Builder | Helping Businesses Turn Strategy into Revenue  September 29, 2010, Ryan worked with Fletcher but they were at different companiesSeptember 29, 2010, Ryan worked with Fletcher but they were at different companies 
+    * 		 All LinkedIn membersShow Ryan Kelly recommendation to All LinkedIn members     
+        * 		Fletcher is a very professional services provider. I would highyl recommend him and his business. Fletcher works hard to provide a high quality of customer satisfaction. His products and services are successful and always affordable. Fletcher is a very professional services provider. I would highyl recommend him and his business. Fletcher works hard to provide a high quality of customer satisfaction. His products and services are successful and always affordable.
+* 		
+* 		      
+* ￼
+* 		   Jason McNally Jason McNally    · 1stFirst degree connection  Owner and Founder at StiqibitOwner and Founder at Stiqibit  August 26, 2010, Jason worked with Fletcher but on different teamsAugust 26, 2010, Jason worked with Fletcher but on different teams 
+    * 		 All LinkedIn membersShow Jason McNally recommendation to All LinkedIn members     
+        * 		Fletcher’s excellent technical capabilities, outstanding work ethic and focus on smooth teamwork made him a pleasure to work with. He is a very positive and helpful person. Also, I learned quite a bit from working with Fletcher. He is highly recommended without reservation. Fletcher’s excellent technical capabilities, outstanding work ethic and focus on smooth teamwork made him a pleasure to work with. He is a very positive and helpful person. Also, I learned quite a bit from working with Fletcher. He is highly recommended without reservation.
+* 		
+* 		      Jorge Reingold    Jorge Reingold Jorge Reingold · 1stFirst degree connection  Accountant at Accountemps and Owner, Spartacus Business ServicesAccountant at Accountemps and Owner, Spartacus Business Services  August 15, 2010, Jorge was Fletcher’s clientAugust 15, 2010, Jorge was Fletcher’s client 
+    * 		 All LinkedIn membersShow Jorge Reingold recommendation to All LinkedIn members     
+        * 		Fletcher delivers high value for your IT dollar; Five Star service. Best all around systems guy we've ever had... Fletcher delivers high value for your IT dollar; Five Star service. Best all around systems guy we've ever had...
+* 		
+* 		      
+* ￼
+* 		   Dan Payne Dan Payne · 1stFirst degree connection  Sales RepresentativeSales Representative  June 30, 2008, Dan worked with Fletcher but on different teamsJune 30, 2008, Dan worked with Fletcher but on different teams 
+    * 		 All LinkedIn membersShow Dan Payne recommendation to All LinkedIn members     
+        * 		Fletcher was a candidate when I first communicated him at Opsware (now HP). His stick-tuitiveness earned him his role at Opsware and he became a great addition to the company. I can say that not only is he engaging and highly competent, but also a good person to know in general. Fletcher was a candidate when I first communicated him at Opsware (now HP). His stick-tuitiveness earned him his role at Opsware and he became a great addition to the company. I can say that not only is he engaging and highly competent, but also a good person to know in general.
+* 		
+* 		      
+* ￼
+* 		   Douglas Dobbins Douglas Dobbins · 1stFirst degree connection  Publisher and Media ConsultantPublisher and Media Consultant  June 23, 2008, Douglas was Fletcher’s clientJune 23, 2008, Douglas was Fletcher’s client 
+    * 		 All LinkedIn membersShow Douglas Dobbins recommendation to All LinkedIn members     
+        * 		Mr. Bonds came in and did the work asked of him. He found ways to improve systems and processes that lead to having a better shipping product. He is easy to work and a team player. Mr. Bonds came in and did the work asked of him. He found ways to improve systems and processes that lead to having a better shipping product. He is easy to work and a team player.
+* 		
+* 		      
+* ￼
+* 		   Dr Adam Sandford Dr Adam Sandford · 1stFirst degree connection  Doctor at Dr Adam SandfordDoctor at Dr Adam Sandford  June 20, 2008, Dr Adam managed Fletcher directlyJune 20, 2008, Dr Adam managed Fletcher directly 
+    * 		 All LinkedIn membersShow Dr Adam Sandford recommendation to All LinkedIn members     
+        * 		Fletcher Bonds worked for me throughout the Windows 98 project. During that time, he was solely responsible for all host connectivity related black box testing for the entire 98 project. 
+        * 		 
+        * 		He was efficient, focused and effective, as well as thorough in his documentation. His passion (and ability) for driving issues to closure led to numerous team meeting recognitions. 
+        * 		 
+        * 		Were I still in the tech industry (vs medical), I would not hesitate to re-hire him. Fletcher Bonds worked for me throughout the Windows 98 project. During that time, he was solely responsible for all host connectivity related black box testing for the entire 98 project. He was efficient, focused and effective, as well as thorough in his documentation. His passion (and ability) for driving issues to closure led to numerous team meeting recognitions. Were I still in the tech industry (vs medical), I would not hesitate to re-hire him.
+* 		
+* 		      
+* ￼
+* 		   James Fecteau James Fecteau · 1stFirst degree connection  Systems EngineerSystems Engineer  June 20, 2008, James worked with Fletcher on the same teamJune 20, 2008, James worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow James Fecteau recommendation to All LinkedIn members     
+        * 		Fletcher is the best Tester I know. He has great understanding and mastery of multiple platforms. He has a way of challenging me that allows me to explore my personal understanding and perspective. Also constantly raises the bar in performance at work. I learned and continue to learn a great deal from him. Balances life, work and personal interested to a degree I greatly admire. I have known him personally and professionally since 1995. Fletcher is the best Tester I know. He has great understanding and mastery of multiple platforms. He has a way of challenging me that allows me to explore my personal understanding and perspective. Also constantly raises the bar in performance at work. I learned and continue to learn a great deal from him. Balances life, work and personal interested to a degree I greatly admire. I have known him personally and professionally since 1995.
+* 		
+* 		      
+* ￼
+* 		   Joseph Cheek Joseph Cheek · 1stFirst degree connection  Contract Drupal DeveloperContract Drupal Developer  April 14, 2008, Joseph worked with Fletcher on the same teamApril 14, 2008, Joseph worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Joseph Cheek recommendation to All LinkedIn members     
+        * 		Fletch is both technically astute and fun to be around. He's a great addition to any team. Fletch is both technically astute and fun to be around. He's a great addition to any team.
+* 		
+* 		      
+* ￼
+* 		   Debra Griffin Debra Griffin · 1stFirst degree connection  Principal SW FW Engineer at MicrosoftPrincipal SW FW Engineer at Microsoft  April 23, 2007, Debra managed Fletcher directlyApril 23, 2007, Debra managed Fletcher directly 
+    * 		 All LinkedIn membersShow Debra Griffin recommendation to All LinkedIn members     
+        * 		Fletcher was always a hardworking, dependable employee. He has a broad range of knowledge making him a valuable resource. He has a witty, entertaining personality and was fun to work with. Fletcher was always a hardworking, dependable employee. He has a broad range of knowledge making him a valuable resource. He has a witty, entertaining personality and was fun to work with.
+* 		
+* 		      Bill Tuttle    Bill Tuttle Bill Tuttle · 1stFirst degree connection  Senior Manager, Quality Assurance at BelkinSenior Manager, Quality Assurance at Belkin  April 11, 2007, Bill was senior to Fletcher but didn't manage Fletcher directlyApril 11, 2007, Bill was senior to Fletcher but didn't manage Fletcher directly 
+    * 		 All LinkedIn membersShow Bill Tuttle recommendation to All LinkedIn members     
+        * 		It is difficult to find a hard working STE with as much deep testing and product experience as Fletcher has. If you have a technical challenge to solve, you can count on Fletcher for the key to a solution. It was a pleasure to have Fletcher on the team. It is difficult to find a hard working STE with as much deep testing and product experience as Fletcher has. If you have a technical challenge to solve, you can count on Fletcher for the key to a solution. It was a pleasure to have Fletcher on the team.
+* 		
+* 		      
+* ￼
+* 		   Ed Carrel Ed Carrel · 1stFirst degree connection  Maker. Muser. Angel. Advisor. Adventurer.Maker. Muser. Angel. Advisor. Adventurer.  April 6, 2007, Ed worked with Fletcher but on different teamsApril 6, 2007, Ed worked with Fletcher but on different teams 
+    * 		 All LinkedIn membersShow Ed Carrel recommendation to All LinkedIn members     
+        * 		I had the opportunity to work with Fletcher on the goClick product at Marchex. Fletcher is an very capable and skilled Test Engineer. His attention to detail and drive for software quality enabled us to ship an excellent product every time. Definitely recommended. I had the opportunity to work with Fletcher on the goClick product at Marchex. Fletcher is an very capable and skilled Test Engineer. His attention to detail and drive for software quality enabled us to ship an excellent product every time. Definitely recommended.
+* 		
+* 		      
+* ￼
+* 		   Pete Dussin Pete Dussin · 1stFirst degree connection  Senior Software Engineer at Sound TransitSenior Software Engineer at Sound Transit  April 6, 2007, Pete worked with Fletcher on the same teamApril 6, 2007, Pete worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Pete Dussin recommendation to All LinkedIn members     
+        * 		Fletcher helped get me up to speed with the QA and project teams when I started at Marchex, and also trained me in testing components of the project as he was transitioning to other work. 
+        * 		Fletcher is always very responsive and very helpful, and will take the time to make sure that not only do you have your answer, but that you've made the important connection with the person that can help you with similar issues going forward. Fletcher is a person that I would definitely like to work with again. Fletcher helped get me up to speed with the QA and project teams when I started at Marchex, and also trained me in testing components of the project as he was transitioning to other work. Fletcher is always very responsive and very helpful, and will take the time to make sure that not only do you have your answer, but that you've made the important connection with the person that can help you with similar issues going forward. Fletcher is a person that I would definitely like to work with again.
+* 		
+* 		      
+* ￼
+* 		   Jacob Greenleaf Jacob Greenleaf · 1stFirst degree connection  Senior Engineer at Starbucks Coffee CompanySenior Engineer at Starbucks Coffee Company  April 6, 2007, Jacob was senior to Fletcher but didn't manage Fletcher directlyApril 6, 2007, Jacob was senior to Fletcher but didn't manage Fletcher directly 
+    * 		 All LinkedIn membersShow Jacob Greenleaf recommendation to All LinkedIn members     
+        * 		Fletch is a perspicacious and diligent fellow who is technically flexible and quickly learns new methodologies and approaches for testing and development. He is an asset to the companies that employ him. Fletch is a perspicacious and diligent fellow who is technically flexible and quickly learns new methodologies and approaches for testing and development. He is an asset to the companies that employ him.
+* 		
+* 		      
+* ￼
+* 		   Joel Hynoski Joel Hynoski · 1stFirst degree connection  Human-centric tech leadershipHuman-centric tech leadership  April 5, 2007, Joel managed Fletcher directlyApril 5, 2007, Joel managed Fletcher directly 
+    * 		 All LinkedIn membersShow Joel Hynoski recommendation to All LinkedIn members     
+        * 		Fletcher was a dedicated and hardworking QA Engineer at Pure. He could be depended upon to always do a great job. He was an integral member of our QA team and on top of that, he's a really fun person to work with. Fletcher was a dedicated and hardworking QA Engineer at Pure. He could be depended upon to always do a great job. He was an integral member of our QA team and on top of that, he's a really fun person to work with.
+* 		
+* 		      
+* ￼
+* 		   Kalah Brown Kalah Brown · 1stFirst degree connection  Sr. Engineering Manager, Data & Analytical Services at Nordstrom | Streaming AnalyticsSr. Engineering Manager, Data & Analytical Services at Nordstrom | Streaming Analytics  April 5, 2007, Kalah worked with Fletcher on the same teamApril 5, 2007, Kalah worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Kalah Brown recommendation to All LinkedIn members     
+        * 		Fletcher's QA work added great value to the product we developed. He does reliable and thorough testing. Fletcher's QA work added great value to the product we developed. He does reliable and thorough testing.
+* 		
+* 		      
+* ￼
+* 		   Jeff Brewster Jeff Brewster · 1stFirst degree connection  IT Quality Assurance | Software Testing Engineer | Release ManagerIT Quality Assurance | Software Testing Engineer | Release Manager  April 4, 2007, Jeff managed Fletcher directlyApril 4, 2007, Jeff managed Fletcher directly 
+    * 		 All LinkedIn membersShow Jeff Brewster recommendation to All LinkedIn members     
+        * 		I enjoyed working with Fletcher. He was able to provide an immediate contribution to our team. I enjoyed working with Fletcher. He was able to provide an immediate contribution to our team.
+* 		
+* 		      
+* ￼
+* 		   Todd Sweetser Todd Sweetser · 1stFirst degree connection  Sr Partner Tech Strategist @ Microsoft | Driving Partner GrowthSr Partner Tech Strategist @ Microsoft | Driving Partner Growth  April 4, 2007, Todd worked with Fletcher on the same teamApril 4, 2007, Todd worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Todd Sweetser recommendation to All LinkedIn members     
+        * 		Fletcher & I started at Attachmate on the same day. Fletcher is a technical wiz, but can comfortably communicate technical issues to non-techies. As a Support Specialist, he was smart, driven, goal-oriented, customer-focused, and successful. He exudes professionalism and integrity. I enjoyed working with him and would not hesitate to hire him or recommend him. Fletcher & I started at Attachmate on the same day. Fletcher is a technical wiz, but can comfortably communicate technical issues to non-techies. As a Support Specialist, he was smart, driven, goal-oriented, customer-focused, and successful. He exudes professionalism and integrity. I enjoyed working with him and would not hesitate to hire him or recommend him.
+* 		
+* 		      
+* ￼
+* 		   Timothy Wiley Timothy Wiley · 1stFirst degree connection  Linux Enthusiast & Lifelong LearnerLinux Enthusiast & Lifelong Learner  April 4, 2007, Timothy worked with Fletcher on the same teamApril 4, 2007, Timothy worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Timothy Wiley recommendation to All LinkedIn members     
+        * 		Fletcher was the Software Test Engineer for my product set at Marchex. He was the person that everyone enjoyed working with. He's open minded & easy going. Fletcher was always eager to learn the intricacies of the software he was testing & wasn't afraid to ask questions to find out the details. He was a pleasure to work with & I'd enjoy the opportunity to do it again. Fletcher was the Software Test Engineer for my product set at Marchex. He was the person that everyone enjoyed working with. He's open minded & easy going. Fletcher was always eager to learn the intricacies of the software he was testing & wasn't afraid to ask questions to find out the details. He was a pleasure to work with & I'd enjoy the opportunity to do it again.
+* 		
+* 		      
+* ￼
+* 		   Todd Wells Todd Wells · 1stFirst degree connection  Software Architect at Disney Streaming/HuluSoftware Architect at Disney Streaming/Hulu  April 3, 2007, Todd worked with Fletcher on the same teamApril 3, 2007, Todd worked with Fletcher on the same team 
+    * 		 All LinkedIn membersShow Todd Wells recommendation to All LinkedIn members     
+        * 		Fletch always took a diligent approach to testing and demonstrated strong ownership of his assigned product features. Fletch always took a diligent approach to testing and demonstrated strong ownership of his assigned product features.
+* 		
+* 		      
+* ￼
+* 		   Joseph Whiting Joseph Whiting · 1stFirst degree connection  Tech Ops Executive | Simplifying Complex Infrastructure, Cutting Costs, and Driving Always-On Performance Across Regulated IndustriesTech Ops Executive | Simplifying Complex Infrastructure, Cutting Costs, and Driving Always-On Performance Across Regulated Industries  April 3, 2007, Joseph managed Fletcher directlyApril 3, 2007, Joseph managed Fletcher directly 
+    * 		 All LinkedIn membersShow Joseph Whiting recommendation to All LinkedIn members     
+        * 		Fletcher was a solid guy, completed tasks on time and went the extra mile when such opportunities came around.
+* 		
+* 		 `
