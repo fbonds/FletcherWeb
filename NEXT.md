@@ -16,7 +16,7 @@
 > are in `HOWTOSAVESTATE.md`. Stored memories load before any file and go stale the same
 > way: check them against the repo rather than trusting them.
 
-Updated 2026-11-07. Working state for fletchweb, the source of fletcherbonds.com. There is
+Updated 2026-11-10. Working state for fletchweb, the source of fletcherbonds.com. There is
 no design document or roadmap. `SETUP.md` is the closest thing to a design description,
 and the live site is the public documentation. This file is neither.
 
@@ -138,6 +138,8 @@ written state rather than re-explaining the project. All ten standards kept, non
 The Writing section in `CLAUDE.md` kept, because the site has public prose. The optional
 `.claude/settings.json` (push and broad-add deny rules, SessionStart hook) included, with
 the knowledge that this repo is public and the file will be visible.
+Committed as `3b8f51f` and pushed by Fletcher; seen on `origin/main` after `git fetch` on
+2026-11-10.
 
 ## In flight
 
@@ -147,32 +149,30 @@ release or deploy goes to the Committed, pushed, released section, with its date
 was checked, and anything else, such as a change made on a hosted service, goes to the
 section it belongs in.
 
-- **Adopting project-kit.** `CLAUDE.md`, `HOWTOSAVESTATE.md`, `NEXT.md` and
-  `.claude/settings.json` are written and approved step by step, not yet committed. The
-  build half of the deploy check in `HOWTOSAVESTATE.md` (`npm ci && npm run build`) has not
-  been run.
+Nothing in flight as of 2026-11-10.
 
 ## Queued, unscheduled, and not to be started unprompted
 
 What is agreed but waiting, with a pointer to wherever the full proposal is written out.
 
-Nothing queued as of 2026-11-07.
+Nothing queued as of 2026-11-10.
 
 ## Committed, pushed, released: three separate questions
 
-As of 2026-11-07, when this was written.
+As of 2026-11-10, when this was written.
 
-**Uncommitted.** The four project-kit files above, each approved by Fletcher. Nothing else
-in the working tree.
+**Uncommitted.** Nothing.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-after `git fetch` on 2026-11-07: `0 0`, last commit `54271d0` ("navigation and seo
-improvements"). Do not trust this: Fletcher pushes, and that moves with no commit here.
+on 2026-11-10: `0 1`, the one unpushed commit being the one that wrote this line, on top of
+`3b8f51f`. Do not trust this: Fletcher pushes, and that moves with no commit here.
 
 **Unreleased or undeployed.** On 2026-11-07 `https://fletcherbonds.com/?cb=...` returned
 HTTP 200 from Netlify, serving `/assets/index-Vl2llGIU.js`, `/assets/index-BJYIQj-U.css`
 and `/assets/me-transparent-bkgrnd-aLNSf3yJ.png`. Whether that is a build of `54271d0` was
-not checked: no local build has been made to compare against.
+not checked: no local build has been made to compare against. Fletcher pushed `3b8f51f` on
+2026-11-10. Whether Netlify deployed it was not checked. It changes no file under `src/` or
+`public/`, so the served assets should not change.
 
 ## Open, not blocking
 
@@ -192,5 +192,8 @@ Found by reading the code on 2026-11-07. None has been fixed or tested in a brow
 - **`README.md`** is the stock Vite template text.
 - **`public/sitemap.xml`** lists `#about`, `#testimonials` and `#contact` as separate URLs,
   which search engines treat as the home page, and every `lastmod` is 2025-11-04.
+- **Deploy check half-tested.** The build half of the check in `HOWTOSAVESTATE.md`
+  (`npm ci && npm run build`, then compare asset names) has never been run, so it has
+  not been shown to work or to fail.
 - **Phone number is public**, in `workandrecs.txt`, the resume PDF and the chatbot
   knowledge base. Possibly intended; not asked.
