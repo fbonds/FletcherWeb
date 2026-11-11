@@ -88,8 +88,11 @@ grep -o '/assets/[^"]*' /tmp/live.html | sort        # live asset names
 npm ci && npm run build && grep -o '/assets/[^"]*' dist/index.html | sort   # local
 ```
 
-The CSS and image names should match between live and local. The JS name only matches if
-the local `.env` holds the same Web3Forms key as Netlify.
+Every name should match. Then confirm byte for byte: fetch each live `/assets/` file and
+`cmp` it against the same file in `dist/`. Do not trust a 200 on its own: Netlify's SPA
+redirect answers a missing asset with `index.html` and status 200, so check the content.
+The JS only matches while Netlify and the local tree build with the same
+`VITE_WEB3FORMS_ACCESS_KEY`; as of 2026-11-11 both are empty (see `NEXT.md`, Open).
 
 - **A published package** gets downloaded and read, not queried for metadata. Check the
   files, the modes and the contents of the artifact a user would actually receive.

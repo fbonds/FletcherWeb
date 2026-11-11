@@ -16,7 +16,7 @@
 > are in `HOWTOSAVESTATE.md`. Stored memories load before any file and go stale the same
 > way: check them against the repo rather than trusting them.
 
-Updated 2026-11-10. Working state for fletchweb, the source of fletcherbonds.com. There is
+Updated 2026-11-11. Working state for fletchweb, the source of fletcherbonds.com. There is
 no design document or roadmap. `SETUP.md` is the closest thing to a design description,
 and the live site is the public documentation. This file is neither.
 
@@ -115,12 +115,20 @@ yet" if you cannot tell. Do not delete one. Specific traps go below them.
   (`netlify.toml`), which is safe only because Vite puts a content hash in each asset
   filename. Not tested against a real stale copy (2026-11-07).
 
-**The JS bundle hash includes the Web3Forms key.** `VITE_WEB3FORMS_ACCESS_KEY` is read
-through `import.meta.env` in `src/components/Chatbot.jsx` and
-`src/components/ContactForm.jsx`, and Vite inlines it at build time. A local build without
-the same key as Netlify will produce a different `index-*.js` name than the live site, which
-looks like an undeployed change when it is not. Compare the CSS and image names instead.
-Inferred from the code on 2026-11-07, not yet shown by a build.
+**Any file in the repo can change the built CSS and JS.** Tailwind v4 scans the project
+for class names, Markdown included, so a docs-only commit changes `index-*.css`, and the
+entry JS hash changes with it. Shown on 2026-11-11: an export of `54271d0` built
+`index-BJYIQj-U.css` and `index-DAWyMMHO.js`; the same export with `NEXT.md` added built
+`index-AK_RcK26.css` and `index-CI1GMlpp.js`. A changed asset name after a push therefore
+does not mean the site's code changed.
+
+**A missing asset returns 200.** The `/*` to `/index.html` redirect in `netlify.toml` serves
+`index.html` with status 200 for any path, including a deleted `/assets/` file. Seen
+2026-11-11 fetching the 2026-11-07 `index-Vl2llGIU.js`. Check content, not status.
+
+**The Web3Forms key is compiled into the JS.** `VITE_WEB3FORMS_ACCESS_KEY` is inlined at
+build time from `src/components/Chatbot.jsx` and `src/components/ContactForm.jsx`, so the
+JS only matches between two builds made with the same key.
 
 ## Decided, do not redo
 
@@ -149,51 +157,61 @@ release or deploy goes to the Committed, pushed, released section, with its date
 was checked, and anything else, such as a change made on a hosted service, goes to the
 section it belongs in.
 
-Nothing in flight as of 2026-11-10.
+Nothing in flight as of 2026-11-11.
 
 ## Queued, unscheduled, and not to be started unprompted
 
 What is agreed but waiting, with a pointer to wherever the full proposal is written out.
 
-Nothing queued as of 2026-11-10.
+Nothing queued as of 2026-11-11.
 
 ## Committed, pushed, released: three separate questions
 
-As of 2026-11-10, when this was written.
+As of 2026-11-11, when this was written.
 
-**Uncommitted.** Nothing.
+**Uncommitted.** Nothing but this save-state commit, approved by the request to save state.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-10: `0 1`, the one unpushed commit being the one that wrote this line, on top of
-`3b8f51f`. Do not trust this: Fletcher pushes, and that moves with no commit here.
+on 2026-11-11 after `git fetch`: `0 0` with `origin/main` at `0eb1b7d`, so Fletcher has
+pushed both project-kit commits. The save-state commit that wrote this line makes it `0 1`. Do not trust this: Fletcher pushes, and that moves with no commit here.
 
-**Unreleased or undeployed.** On 2026-11-07 `https://fletcherbonds.com/?cb=...` returned
-HTTP 200 from Netlify, serving `/assets/index-Vl2llGIU.js`, `/assets/index-BJYIQj-U.css`
-and `/assets/me-transparent-bkgrnd-aLNSf3yJ.png`. Whether that is a build of `54271d0` was
-not checked: no local build has been made to compare against. Fletcher pushed `3b8f51f` on
-2026-11-10. Whether Netlify deployed it was not checked. It changes no file under `src/` or
-`public/`, so the served assets should not change.
+**Unreleased or undeployed.** Nothing. On 2026-11-11 `https://fletcherbonds.com/?cb=...`
+returned 200 and served `index-CI1GMlpp.js`, `index-AK_RcK26.css` and
+`me-transparent-bkgrnd-aLNSf3yJ.png`. A local `npm ci && npm run build` of `0eb1b7d` (Node
+22.20.0, no `.env`) produced the same three names, and `cmp` found the live JS and CSS
+byte-identical to `dist/`. Shown failing: a build of `54271d0` produced
+`index-BJYIQj-U.css` and `index-DAWyMMHO.js`, which the comparison reports as different.
+The image was compared by name only.
+
+On 2026-11-07 the live site served `index-BJYIQj-U.css`, which matches a local build of
+`54271d0`, but `index-Vl2llGIU.js`, which does not (local gives `index-DAWyMMHO.js`). That
+file is gone from the live site, so the difference cannot be inspected now. One possible
+cause is a non-empty key in that build; not established.
 
 ## Open, not blocking
 
 Anything known, unresolved, and not in the way.
 
-Found by reading the code on 2026-11-07. None has been fixed or tested in a browser.
+Found by reading the code on 2026-11-07 unless dated otherwise. None has been fixed or
+tested in a browser.
+
+- **Contact form and chatbot feedback send an empty key in production.** The live JS
+  fetched on 2026-11-11 contains `access_key:""` in both Web3Forms calls. Netlify is
+  building without `VITE_WEB3FORMS_ACCESS_KEY`, or under another name. What Web3Forms
+  does with an empty key was not tested: that means submitting to the live service. The
+  Netlify environment settings have not been read.
 
 - **Chatbot keyword bug.** The AI/ML branch in `generateResponse`
   (`src/components/Chatbot.jsx`) runs first and matches the substrings `ai` and `ml`
   anywhere, so "what's your email?", "available", "detail", "html" and "xml" get the AI/ML
   answer.
 - **Node version.** `netlify.toml` sets `NODE_VERSION = "18"`, and Vite 7 requires Node
-  20.19 or later. Whether a Netlify dashboard setting overrides it is not known; the
-  Netlify build log has not been read.
+  20.19 or later. Netlify did build `0eb1b7d` (live matches it, 2026-11-11), so something
+  overrides 18 or the requirement did not bite. The Netlify build log has not been read.
 - **Location disagrees.** `index.html` and `src/components/SEO.jsx` say Seattle, WA.
   `src/components/Chatbot.jsx` says Gig Harbor, WA.
 - **`README.md`** is the stock Vite template text.
 - **`public/sitemap.xml`** lists `#about`, `#testimonials` and `#contact` as separate URLs,
   which search engines treat as the home page, and every `lastmod` is 2025-11-04.
-- **Deploy check half-tested.** The build half of the check in `HOWTOSAVESTATE.md`
-  (`npm ci && npm run build`, then compare asset names) has never been run, so it has
-  not been shown to work or to fail.
 - **Phone number is public**, in `workandrecs.txt`, the resume PDF and the chatbot
   knowledge base. Possibly intended; not asked.
