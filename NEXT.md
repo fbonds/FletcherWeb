@@ -116,11 +116,15 @@ yet" if you cannot tell. Do not delete one. Specific traps go below them.
   filename. Not tested against a real stale copy (2026-11-07).
 
 **Any file in the repo can change the built CSS and JS.** Tailwind v4 scans the project
-for class names, Markdown included, so a docs-only commit changes `index-*.css`, and the
-entry JS hash changes with it. Shown on 2026-11-11: an export of `54271d0` built
-`index-BJYIQj-U.css` and `index-DAWyMMHO.js`; the same export with `NEXT.md` added built
-`index-AK_RcK26.css` and `index-CI1GMlpp.js`. A changed asset name after a push therefore
-does not mean the site's code changed.
+for class names, Markdown included, so a docs-only commit can change `index-*.css`, and the
+entry JS hash changes with it. It does so only when the new text contains a word Tailwind
+reads as a class it did not already generate. Shown on 2026-11-11: an export of `54271d0`
+built `index-BJYIQj-U.css` and `index-DAWyMMHO.js`; the same export with `NEXT.md` added
+built `index-AK_RcK26.css` and `index-CI1GMlpp.js`. A changed asset name after a push
+therefore does not mean the site's code changed. The reverse also happens: on 2026-11-12
+the `NEXT.md`-only commit `0f6e8ad` built the same three files as `357f76e`. Do not predict
+whether a docs commit changes the names; build it and look. When the names do not change,
+the live files cannot show which commit Netlify last built; only the Netlify dashboard can.
 
 **A missing asset returns 200.** The `/*` to `/index.html` redirect in `netlify.toml` serves
 `index.html` with status 200 for any path, including a deleted `/assets/` file. Seen
@@ -202,16 +206,22 @@ Nothing queued as of 2026-11-12.
 
 As of 2026-11-12, when this was written.
 
-**Uncommitted.** Nothing. This update is its own commit, approved by Fletcher on
+**Uncommitted.** Nothing. This correction is its own commit, approved by Fletcher on
 2026-11-12.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-12 after `git fetch`, before this commit: `0 0` with `origin/main` at `357f76e`,
-so Fletcher had pushed the Projects tabs commit. This commit makes it `0 1`. Do not trust
+on 2026-11-12 after `git fetch`, before this commit: `0 0` with `origin/main` at `0f6e8ad`,
+so Fletcher had pushed the Projects tabs commit `357f76e` and the save-state commit
+`0f6e8ad`. This commit makes it `0 1`. Do not trust
 this: Fletcher pushes, and that moves with no commit here.
 
-**Unreleased or undeployed.** This commit, which changes only this file. The site's code is
-all live. Deploying it will still change the CSS and JS names (see Traps).
+**Unreleased or undeployed.** The site's code is all live. Only `NEXT.md` has changed since
+`357f76e`: in `0f6e8ad` and in this commit. A clean build of `0f6e8ad` produced the same
+three files as `357f76e`, and on 2026-11-12, after Fletcher pushed `0f6e8ad`, the live
+files were byte-identical to it. Because the files are identical, the live site cannot
+show whether Netlify built `0f6e8ad`; the Netlify dashboard was not read. A build of
+`0f6e8ad` with this commit's `NEXT.md` copied in also produced the same files, byte for
+byte, so deploying this commit should not change the live site.
 
 Last deploy checked: `357f76e`, the Projects tab row with Vibe Coding How-To, Bugpacker
 and Project-Kit. On 2026-11-12, on the second of a series of fetches 10 seconds apart,
