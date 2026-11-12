@@ -16,7 +16,7 @@
 > are in `HOWTOSAVESTATE.md`. Stored memories load before any file and go stale the same
 > way: check them against the repo rather than trusting them.
 
-Updated 2026-11-11. Working state for fletchweb, the source of fletcherbonds.com. There is
+Updated 2026-11-12. Working state for fletchweb, the source of fletcherbonds.com. There is
 no design document or roadmap. `SETUP.md` is the closest thing to a design description,
 and the live site is the public documentation. This file is neither.
 
@@ -149,6 +149,39 @@ the knowledge that this repo is public and the file will be visible.
 Committed as `3b8f51f` and pushed by Fletcher; seen on `origin/main` after `git fetch` on
 2026-11-10.
 
+**2026-11-12: Projects section shows tabs, not cards, and no "Open in new tab" link.**
+The first version (`4c6b82b`) had a card per project above the frame. Fletcher said the
+card pushed the embedded site off screen, so the cards were replaced by a row of tab
+buttons that switch one iframe. The row only shows when `PROJECTS` in
+`src/components/Projects.jsx` has more than one entry. Fletcher did not want an "Open in
+new tab" link, so it was removed. Do not add either back without asking. Projects shown:
+Vibe Coding How-To (`https://fbonds.github.io/vibe-coding-howto/`), Bugpacker
+(`https://bugpacker.com/`) and Project-Kit (`https://fbonds.github.io/project-kit/`), in
+that order. Fletcher chose the capitalized "Project-Kit" over the site's own "project-kit".
+
+**2026-11-12: the embedded sites open outside links differently, accepted for now.**
+All three sites detect when they are inside a frame and change their external links. Those
+changes live in their own repos and hosts, not here.
+- bugpacker.com loads `/frame-links.js` on `/`, `/compare`, `/roadmap`, `/security` and
+  `/privacy`. When framed it sets `target="_top"`, so a click replaces fletcherbonds.com
+  with the linked site. Checked 2026-11-12 in Chrome by framing each page and reading the
+  attributes: 3 external links on `/` and 16 on `/compare`, all `_top`. Shown failing:
+  `/compare` loaded unframed had 16 of 16 without `_top`.
+- vibe-coding-howto (repo fbonds/vibe-coding-howto, commit `b8b2ce8`, Pages built from
+  `d51244a`) sets `target="_blank"` and `rel="noopener"` when framed, so a click opens a
+  new tab and the reader keeps their place. Checked 2026-11-12 in Chrome across all 11
+  pages framed: 54 external links, all `_blank` with `noopener`. Shown failing: the index
+  loaded unframed had 1 external link without `_blank`.
+- project-kit (repo fbonds/project-kit, one page) carries the same `_blank` script as
+  vibe-coding-howto. Checked 2026-11-12 in Chrome by framing the page: 7 external links,
+  all `_blank` with `noopener`. Shown failing: unframed, 0 of 7 had `_blank`. Its response
+  has no `X-Frame-Options` or `Content-Security-Policy` header (curl, 2026-11-12), which
+  is why it can be framed.
+Fletcher chose to leave bugpacker.com on `_top`. Switching it to `_blank` was offered and
+declined for now. Not checked: an actual click in either site. Minor, not raised for
+change: the howto and project-kit scripts set `a.rel = 'noopener'`, which would overwrite any existing
+`rel` value; no link on either site has one today.
+
 ## In flight
 
 What is being worked on now, and what state it is in. Remove an item when it is finished,
@@ -157,35 +190,38 @@ release or deploy goes to the Committed, pushed, released section, with its date
 was checked, and anything else, such as a change made on a hosted service, goes to the
 section it belongs in.
 
-Nothing in flight as of 2026-11-11.
+Nothing in flight as of 2026-11-12.
 
 ## Queued, unscheduled, and not to be started unprompted
 
 What is agreed but waiting, with a pointer to wherever the full proposal is written out.
 
-Nothing queued as of 2026-11-11.
+Nothing queued as of 2026-11-12.
 
 ## Committed, pushed, released: three separate questions
 
-As of 2026-11-11, when this was written.
+As of 2026-11-12, when this was written.
 
-**Uncommitted.** Nothing. The Projects section, `src/components/Footer.jsx` and this
-update went in one commit, approved by Fletcher on 2026-11-11.
+**Uncommitted.** Nothing. The Projects tabs change and the Bugpacker and Project-Kit
+entries in `src/components/Projects.jsx`, and this update, went in one commit, approved by Fletcher on 2026-11-12.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-11 after `git fetch`: `0 0` with `origin/main` at `0eb1b7d`, so Fletcher has
-pushed both project-kit commits. After that, the save-state commit `e2e35fa` and the Projects commit made it `0 2`. Do not trust this: Fletcher pushes, and that moves with no commit here.
+on 2026-11-12 after `git fetch`, before this commit: `0 0` with `origin/main` at `4c6b82b`.
+This commit makes it `0 1`. Do not trust this: Fletcher pushes, and that moves with no
+commit here.
 
-**Unreleased or undeployed.** The save-state commit and the Projects commit, both unpushed
-as of 2026-11-11. The Projects section and the Claude Code footer link are not live.
+**Unreleased or undeployed.** This commit. The tab row and the Bugpacker and Project-Kit
+tabs are not live.
 
-Last deploy checked: on 2026-11-11 `https://fletcherbonds.com/?cb=...`
-returned 200 and served `index-CI1GMlpp.js`, `index-AK_RcK26.css` and
-`me-transparent-bkgrnd-aLNSf3yJ.png`. A local `npm ci && npm run build` of `0eb1b7d` (Node
-22.20.0, no `.env`) produced the same three names, and `cmp` found the live JS and CSS
-byte-identical to `dist/`. Shown failing: a build of `54271d0` produced
-`index-BJYIQj-U.css` and `index-DAWyMMHO.js`, which the comparison reports as different.
-The image was compared by name only.
+Last deploy checked: `4c6b82b`, the Projects section with the Claude Code footer link. On
+2026-11-12 `https://fletcherbonds.com/?cb=...` returned 200 and served
+`index-BDklpPoE.js`, `index-B1yLNz5H.css` and `me-transparent-bkgrnd-aLNSf3yJ.png`. A
+`git archive 4c6b82b` export, built with `npm ci && npm run build` (Node 22.20.0, no
+`.env`), produced the same three names, and `cmp` found all three live files
+byte-identical to its `dist/`. Shown failing: the same export with the uncommitted
+`Projects.jsx` copied in built `index-C9brRQ80.js`, and `cmp` reported it different from
+the live JS. The same three live names were also seen on 2026-11-11, shortly after
+Fletcher pushed.
 
 On 2026-11-07 the live site served `index-BJYIQj-U.css`, which matches a local build of
 `54271d0`, but `index-Vl2llGIU.js`, which does not (local gives `index-DAWyMMHO.js`). That
