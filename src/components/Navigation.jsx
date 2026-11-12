@@ -11,6 +11,7 @@ export default function Navigation() {
     { id: 'about', label: 'About', href: '#about' },
     { id: 'testimonials', label: 'Testimonials', href: '#testimonials' },
     { id: 'contact', label: 'Contact', href: '#contact' },
+    { id: 'projects', label: 'Projects', href: '#projects' },
   ]
 
   useEffect(() => {

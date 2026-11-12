@@ -5,6 +5,8 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 import Chatbot from './components/Chatbot'
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <About />
         <Testimonials />
         <Contact />
+        <Projects />
+        <Footer />
         <Chatbot />
       </div>
     </>

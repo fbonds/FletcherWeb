@@ -66,37 +66,6 @@ export default function Contact() {
               )
             })}
           </div>
-
-          <motion.div
-            className="glass-panel p-4 md:p-8 inline-block max-w-full"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ delay: 0.9, duration: 0.5 }}
-          >
-            <p className="text-gray-400 text-xs md:text-sm">
-              © 2025 Fletcher Bonds. All rights reserved.
-            </p>
-            <p className="text-cyan-400 text-xs md:text-sm mt-2">
-              Built with{' '}
-              <a 
-                href="https://code.visualstudio.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-cyan-300 underline transition-colors break-words"
-              >
-                VS Code
-              </a>
-              {' '}+{' '}
-              <a 
-                href="https://factory.ai" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-purple-400 underline transition-colors"
-              >
-                Droid from Factory.AI
-              </a>
-            </p>
-          </motion.div>
         </motion.div>
       </div>
 

@@ -169,13 +169,17 @@ Nothing queued as of 2026-11-11.
 
 As of 2026-11-11, when this was written.
 
-**Uncommitted.** Nothing but this save-state commit, approved by the request to save state.
+**Uncommitted.** Nothing. The Projects section, `src/components/Footer.jsx` and this
+update went in one commit, approved by Fletcher on 2026-11-11.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
 on 2026-11-11 after `git fetch`: `0 0` with `origin/main` at `0eb1b7d`, so Fletcher has
-pushed both project-kit commits. The save-state commit that wrote this line makes it `0 1`. Do not trust this: Fletcher pushes, and that moves with no commit here.
+pushed both project-kit commits. After that, the save-state commit `e2e35fa` and the Projects commit made it `0 2`. Do not trust this: Fletcher pushes, and that moves with no commit here.
 
-**Unreleased or undeployed.** Nothing. On 2026-11-11 `https://fletcherbonds.com/?cb=...`
+**Unreleased or undeployed.** The save-state commit and the Projects commit, both unpushed
+as of 2026-11-11. The Projects section and the Claude Code footer link are not live.
+
+Last deploy checked: on 2026-11-11 `https://fletcherbonds.com/?cb=...`
 returned 200 and served `index-CI1GMlpp.js`, `index-AK_RcK26.css` and
 `me-transparent-bkgrnd-aLNSf3yJ.png`. A local `npm ci && npm run build` of `0eb1b7d` (Node
 22.20.0, no `.env`) produced the same three names, and `cmp` found the live JS and CSS
@@ -213,5 +217,11 @@ tested in a browser.
 - **`README.md`** is the stock Vite template text.
 - **`public/sitemap.xml`** lists `#about`, `#testimonials` and `#contact` as separate URLs,
   which search engines treat as the home page, and every `lastmod` is 2025-11-04.
+- **Phone menu scroll unconfirmed.** On 2026-11-11, in a 390px-wide frame on the local
+  preview, tapping Contact or Projects in the hamburger menu closed the menu but did not
+  scroll. Desktop nav scrolls correctly. Not established whether this is the test harness
+  or a real bug; check on a phone against the live site.
+- **Footer says "© 2025".** `src/components/Footer.jsx`. Not changed; Fletcher has not
+  asked for it.
 - **Phone number is public**, in `workandrecs.txt`, the resume PDF and the chatbot
   knowledge base. Possibly intended; not asked.
