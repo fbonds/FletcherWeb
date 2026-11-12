@@ -202,26 +202,29 @@ Nothing queued as of 2026-11-12.
 
 As of 2026-11-12, when this was written.
 
-**Uncommitted.** Nothing. The Projects tabs change and the Bugpacker and Project-Kit
-entries in `src/components/Projects.jsx`, and this update, went in one commit, approved by Fletcher on 2026-11-12.
+**Uncommitted.** Nothing. This update is its own commit, approved by Fletcher on
+2026-11-12.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-12 after `git fetch`, before this commit: `0 0` with `origin/main` at `4c6b82b`.
-This commit makes it `0 1`. Do not trust this: Fletcher pushes, and that moves with no
-commit here.
+on 2026-11-12 after `git fetch`, before this commit: `0 0` with `origin/main` at `357f76e`,
+so Fletcher had pushed the Projects tabs commit. This commit makes it `0 1`. Do not trust
+this: Fletcher pushes, and that moves with no commit here.
 
-**Unreleased or undeployed.** This commit. The tab row and the Bugpacker and Project-Kit
-tabs are not live.
+**Unreleased or undeployed.** This commit, which changes only this file. The site's code is
+all live. Deploying it will still change the CSS and JS names (see Traps).
 
-Last deploy checked: `4c6b82b`, the Projects section with the Claude Code footer link. On
-2026-11-12 `https://fletcherbonds.com/?cb=...` returned 200 and served
-`index-BDklpPoE.js`, `index-B1yLNz5H.css` and `me-transparent-bkgrnd-aLNSf3yJ.png`. A
-`git archive 4c6b82b` export, built with `npm ci && npm run build` (Node 22.20.0, no
-`.env`), produced the same three names, and `cmp` found all three live files
-byte-identical to its `dist/`. Shown failing: the same export with the uncommitted
-`Projects.jsx` copied in built `index-C9brRQ80.js`, and `cmp` reported it different from
-the live JS. The same three live names were also seen on 2026-11-11, shortly after
-Fletcher pushed.
+Last deploy checked: `357f76e`, the Projects tab row with Vibe Coding How-To, Bugpacker
+and Project-Kit. On 2026-11-12, on the second of a series of fetches 10 seconds apart,
+started after a clean local build finished following Fletcher's push,
+`https://fletcherbonds.com/?cb=...` returned 200 and served `index-K1F0psrG.js`,
+`index-DBh2zIZc.css` and `me-transparent-bkgrnd-aLNSf3yJ.png`. A `git archive 357f76e`
+export, built with `npm ci && npm run build` (Node 22.20.0, no `.env`), produced the same
+three names, and `cmp` found all three live files byte-identical to its `dist/`. The live
+JS contains `fbonds.github.io/project-kit/`, `bugpacker.com/` and `Project-Kit`, and not
+"Open in new tab". Shown failing: `cmp` of the new live JS against the `4c6b82b` live JS
+(`index-BDklpPoE.js`) reported them different. Not checked: clicking the tabs on the live
+site, phone width, and the Netlify dashboard and build log. The tabs were clicked in
+Chrome on a local preview of the same build (`index-K1F0psrG.js`) on 2026-11-12.
 
 On 2026-11-07 the live site served `index-BJYIQj-U.css`, which matches a local build of
 `54271d0`, but `index-Vl2llGIU.js`, which does not (local gives `index-DAWyMMHO.js`). That
