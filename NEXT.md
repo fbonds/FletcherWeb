@@ -225,19 +225,19 @@ As of 2026-11-18, when this was written.
 2026-11-18.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-18 after `git fetch`, before this commit: `0 0` with `origin/main` at `4d6c61a`
+on 2026-11-18 after `git fetch`, before this commit: `0 0` with `origin/main` at `63dac4e`
 (`git ls-remote` showed the same hash). This commit makes it `0 1`. Do not trust this:
 Fletcher pushes, and that moves with no commit here.
 
 **Unreleased or undeployed.** The site's code is all live. Fletcher pushed
-`1af02a6..fb37ca4` on 2026-11-17 and `fb37ca4..4d6c61a` on 2026-11-18. Everything after
-`f3df356` changes only `NEXT.md`, and `f3df356`, `fb37ca4` and `4d6c61a` build the same
-three files, so the live files cannot show which one Netlify last built; the Netlify
-dashboard was not read. On 2026-11-18 at 08:15 PST, `https://fletcherbonds.com/?cb=...`
-returned 200 and served `index-lW1chVrd.js`, `index-DBh2zIZc.css` and
-`me-transparent-bkgrnd-aLNSf3yJ.png`, and `cmp` found all three byte-identical to a clean
-`git archive 4d6c61a` build. Shown failing: a copy of the live CSS with one byte changed at
-offset 1000 was reported by `cmp` as differing at char 1001.
+`1af02a6..fb37ca4` on 2026-11-17, and `fb37ca4..4d6c61a` and `4d6c61a..63dac4e` on
+2026-11-18. Everything after `f3df356` changes only `NEXT.md`, and `f3df356`, `fb37ca4`,
+`4d6c61a` and `63dac4e` build the same three files, so the live files cannot show which one
+Netlify last built; the Netlify dashboard was not read. On 2026-11-18 at 12:57 PST,
+`https://fletcherbonds.com/?cb=...` returned 200 and served `index-lW1chVrd.js`,
+`index-DBh2zIZc.css` and `me-transparent-bkgrnd-aLNSf3yJ.png`, and `cmp` found all three
+byte-identical to a clean `git archive 63dac4e` build. Shown failing: a copy of the live
+PNG with one byte changed at offset 2000 was reported by `cmp` as differing at char 2001.
 
 Last deploy checked: `fb37ca4`, which adds the Oracle of Nethys tab. On 2026-11-17, on the
 second of a series of fetches 10 seconds apart, started after the push,
