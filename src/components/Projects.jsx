@@ -24,6 +24,13 @@ const PROJECTS = [
     url: 'https://fbonds.github.io/project-kit/',
     embed: true,
   },
+  {
+    id: 'oracle-of-nethys',
+    title: 'Oracle of Nethys',
+    description: 'A local, searchable copy of the Pathfinder 2e rules, and an MCP server that lets Claude Code answer rules questions from it with citations.',
+    url: 'https://fbonds.github.io/oracle-of-nethys/',
+    embed: true,
+  },
 ]
 
 export default function Projects() {
