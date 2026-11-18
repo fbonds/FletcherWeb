@@ -193,7 +193,7 @@ change: the howto and project-kit scripts set `a.rel = 'noopener'`, which would 
 
 **2026-11-17: Oracle of Nethys added as the fourth Projects tab.** Fletcher approved adding
 `https://fbonds.github.io/oracle-of-nethys/` after Project-Kit, titled "Oracle of Nethys",
-with the site's own meta description as the tooltip. Committed as `f3df356`. Its response
+with the site's own meta description as the tooltip. Committed as `f3df356`, deployed 2026-11-17. Its response
 had no `X-Frame-Options` or `Content-Security-Policy` header (curl, 2026-11-17), and its
 page carries the same `_blank` frame-link script as project-kit (read from the fetched
 HTML). Not checked: the script's effect when framed, or any click inside the frame. The
@@ -219,36 +219,29 @@ Nothing queued as of 2026-11-12.
 
 As of 2026-11-17, when this was written.
 
-**Uncommitted.** Nothing. This `NEXT.md` update is its own commit, approved by Fletcher on
+**Uncommitted.** Nothing. This deploy record is its own commit, approved by Fletcher on
 2026-11-17.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-17: `0 0` after `git fetch` with `origin/main` at `1af02a6`, then `0 1` after
-`f3df356` (Oracle of Nethys tab). This commit makes it `0 2`. Do not trust this: Fletcher
-pushes, and that moves with no commit here.
+on 2026-11-17 after Fletcher's push and `git fetch`: `0 0` with `origin/main` at `fb37ca4`.
+This commit makes it `0 1`. Do not trust this: Fletcher pushes, and that moves with no
+commit here.
 
-**Unreleased or undeployed.** `f3df356` changes the site's code and is not live. On
-2026-11-17 the live site served `index-K1F0psrG.js`, `index-DBh2zIZc.css` and
-`me-transparent-bkgrnd-aLNSf3yJ.png`. A local build of the working tree that became
-`f3df356` (Node 22.20.0, no `.env`) produced `index-lW1chVrd.js` and `index-DBh2zIZc.css`.
-The new tab was clicked in Chrome on a local `vite preview` of that build: it became the
-pressed tab and set the iframe to the Oracle of Nethys URL, and the page rendered in the
-frame. Not shown failing: the counter-check against the live JS was refused by the
-cc-plugin-privacy hook (see Traps). Not checked: phone width, links inside the frame, the
-live site after a push.
+**Unreleased or undeployed.** The site's code is all live. Fletcher pushed
+`1af02a6..fb37ca4` on 2026-11-17. `f3df356` and `fb37ca4` build the same three files, so
+the live files cannot show which one Netlify built; the Netlify dashboard was not read.
 
-Last deploy checked: `357f76e`, the Projects tab row with Vibe Coding How-To, Bugpacker
-and Project-Kit. On 2026-11-12, on the second of a series of fetches 10 seconds apart,
-started after a clean local build finished following Fletcher's push,
-`https://fletcherbonds.com/?cb=...` returned 200 and served `index-K1F0psrG.js`,
-`index-DBh2zIZc.css` and `me-transparent-bkgrnd-aLNSf3yJ.png`. A `git archive 357f76e`
+Last deploy checked: `fb37ca4`, which adds the Oracle of Nethys tab. On 2026-11-17, on the
+second of a series of fetches 10 seconds apart, started after the push,
+`https://fletcherbonds.com/?cb=...` returned 200 and served `index-lW1chVrd.js`,
+`index-DBh2zIZc.css` and `me-transparent-bkgrnd-aLNSf3yJ.png`. A `git archive fb37ca4`
 export, built with `npm ci && npm run build` (Node 22.20.0, no `.env`), produced the same
 three names, and `cmp` found all three live files byte-identical to its `dist/`. The live
-JS contains `fbonds.github.io/project-kit/`, `bugpacker.com/` and `Project-Kit`, and not
-"Open in new tab". Shown failing: `cmp` of the new live JS against the `4c6b82b` live JS
-(`index-BDklpPoE.js`) reported them different. Not checked: clicking the tabs on the live
-site, phone width, and the Netlify dashboard and build log. The tabs were clicked in
-Chrome on a local preview of the same build (`index-K1F0psrG.js`) on 2026-11-12.
+JS contains "Oracle of Nethys". Shown failing: a copy of the live JS with one byte changed
+at offset 500000 was reported by `cmp` as differing at char 500001. Not checked: clicking
+the tabs on the live site, phone width, links inside the frame, and the Netlify dashboard
+and build log. The tab was clicked in Chrome on a local preview of the same build on
+2026-11-17.
 
 On 2026-11-07 the live site served `index-BJYIQj-U.css`, which matches a local build of
 `54271d0`, but `index-Vl2llGIU.js`, which does not (local gives `index-DAWyMMHO.js`). That
