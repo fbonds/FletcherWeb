@@ -16,7 +16,7 @@
 > are in `HOWTOSAVESTATE.md`. Stored memories load before any file and go stale the same
 > way: check them against the repo rather than trusting them.
 
-Updated 2026-11-17. Working state for fletchweb, the source of fletcherbonds.com. There is
+Updated 2026-11-18. Working state for fletchweb, the source of fletcherbonds.com. There is
 no design document or roadmap. `SETUP.md` is the closest thing to a design description,
 and the live site is the public documentation. This file is neither.
 
@@ -252,8 +252,8 @@ cause is a non-empty key in that build; not established.
 
 Anything known, unresolved, and not in the way.
 
-Found by reading the code on 2026-11-07 unless dated otherwise. None has been fixed or
-tested in a browser.
+Found by reading the code on 2026-11-07 unless dated otherwise. None has been fixed.
+None has been tested in a browser unless the entry says so.
 
 - **Contact form and chatbot feedback send an empty key in production.** The live JS
   fetched on 2026-11-11 contains `access_key:""` in both Web3Forms calls. Netlify is
@@ -279,5 +279,19 @@ tested in a browser.
   or a real bug; check on a phone against the live site.
 - **Footer says "© 2025".** `src/components/Footer.jsx`. Not changed; Fletcher has not
   asked for it.
+- **Projects frame flashed, not reproduced.** On 2026-11-17 Fletcher saw the Projects
+  frame flash on the live site, as if the background animation briefly replaced it. Chrome
+  (current version), window 2669x812 at devicePixelRatio 1, page idle, first tab (Vibe
+  Coding How-To) after a hard refresh, repeating. Switching tabs stopped it for all tabs,
+  the first included. Switching tabs remounts the iframe (`key={selected.id}` in
+  `src/components/Projects.jsx`). On 2026-11-18 it did not recur: not on a local preview
+  with `loading="lazy"` removed, not on a local preview of the byte-identical deployed
+  build, and not on the live site after a hard refresh. So removing `loading="lazy"` is not
+  shown to fix anything, and the change was reverted. Cause not established. The page
+  composites a WebGL canvas that redraws every frame, a `backdrop-blur-md` panel over it,
+  and a cross-origin iframe, which makes a Chrome rendering glitch plausible but not
+  shown. If it recurs, before switching tabs: open Chrome's Task Manager (Window > Task
+  Manager) and note the GPU Process CPU and memory, and whether other GPU-heavy tabs are
+  open.
 - **Phone number is public**, in `workandrecs.txt`, the resume PDF and the chatbot
   knowledge base. Possibly intended; not asked.
