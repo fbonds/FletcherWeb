@@ -16,7 +16,7 @@
 > are in `HOWTOSAVESTATE.md`. Stored memories load before any file and go stale the same
 > way: check them against the repo rather than trusting them.
 
-Updated 2026-11-12. Working state for fletchweb, the source of fletcherbonds.com. There is
+Updated 2026-11-17. Working state for fletchweb, the source of fletcherbonds.com. There is
 no design document or roadmap. `SETUP.md` is the closest thing to a design description,
 and the live site is the public documentation. This file is neither.
 
@@ -134,6 +134,10 @@ the live files cannot show which commit Netlify last built; only the Netlify das
 build time from `src/components/Chatbot.jsx` and `src/components/ContactForm.jsx`, so the
 JS only matches between two builds made with the same key.
 
+**The cc-plugin-privacy hook refuses some commands that mention this site's URLs**, even
+with no email in them. Seen 2026-11-17, twice, on a curl of a `fletcherbonds.com/assets/`
+file piped to grep. Cause not established. Earlier curls to the same hosts went through.
+
 ## Decided, do not redo
 
 What was settled and why, what was ruled out and why, and anything the owner said not to
@@ -162,6 +166,7 @@ new tab" link, so it was removed. Do not add either back without asking. Project
 Vibe Coding How-To (`https://fbonds.github.io/vibe-coding-howto/`), Bugpacker
 (`https://bugpacker.com/`) and Project-Kit (`https://fbonds.github.io/project-kit/`), in
 that order. Fletcher chose the capitalized "Project-Kit" over the site's own "project-kit".
+Oracle of Nethys added as a fourth tab on 2026-11-17, see below.
 
 **2026-11-12: the embedded sites open outside links differently, accepted for now.**
 All three sites detect when they are inside a frame and change their external links. Those
@@ -186,6 +191,14 @@ declined for now. Not checked: an actual click in either site. Minor, not raised
 change: the howto and project-kit scripts set `a.rel = 'noopener'`, which would overwrite any existing
 `rel` value; no link on either site has one today.
 
+**2026-11-17: Oracle of Nethys added as the fourth Projects tab.** Fletcher approved adding
+`https://fbonds.github.io/oracle-of-nethys/` after Project-Kit, titled "Oracle of Nethys",
+with the site's own meta description as the tooltip. Committed as `f3df356`. Its response
+had no `X-Frame-Options` or `Content-Security-Policy` header (curl, 2026-11-17), and its
+page carries the same `_blank` frame-link script as project-kit (read from the fetched
+HTML). Not checked: the script's effect when framed, or any click inside the frame. The
+site's intro had an em dash on 2026-11-17; Fletcher is fixing that in its own repo.
+
 ## In flight
 
 What is being worked on now, and what state it is in. Remove an item when it is finished,
@@ -204,24 +217,25 @@ Nothing queued as of 2026-11-12.
 
 ## Committed, pushed, released: three separate questions
 
-As of 2026-11-12, when this was written.
+As of 2026-11-17, when this was written.
 
-**Uncommitted.** Nothing. This correction is its own commit, approved by Fletcher on
-2026-11-12.
+**Uncommitted.** Nothing. This `NEXT.md` update is its own commit, approved by Fletcher on
+2026-11-17.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-12 after `git fetch`, before this commit: `0 0` with `origin/main` at `0f6e8ad`,
-so Fletcher had pushed the Projects tabs commit `357f76e` and the save-state commit
-`0f6e8ad`. This commit makes it `0 1`. Do not trust
-this: Fletcher pushes, and that moves with no commit here.
+on 2026-11-17: `0 0` after `git fetch` with `origin/main` at `1af02a6`, then `0 1` after
+`f3df356` (Oracle of Nethys tab). This commit makes it `0 2`. Do not trust this: Fletcher
+pushes, and that moves with no commit here.
 
-**Unreleased or undeployed.** The site's code is all live. Only `NEXT.md` has changed since
-`357f76e`: in `0f6e8ad` and in this commit. A clean build of `0f6e8ad` produced the same
-three files as `357f76e`, and on 2026-11-12, after Fletcher pushed `0f6e8ad`, the live
-files were byte-identical to it. Because the files are identical, the live site cannot
-show whether Netlify built `0f6e8ad`; the Netlify dashboard was not read. A build of
-`0f6e8ad` with this commit's `NEXT.md` copied in also produced the same files, byte for
-byte, so deploying this commit should not change the live site.
+**Unreleased or undeployed.** `f3df356` changes the site's code and is not live. On
+2026-11-17 the live site served `index-K1F0psrG.js`, `index-DBh2zIZc.css` and
+`me-transparent-bkgrnd-aLNSf3yJ.png`. A local build of the working tree that became
+`f3df356` (Node 22.20.0, no `.env`) produced `index-lW1chVrd.js` and `index-DBh2zIZc.css`.
+The new tab was clicked in Chrome on a local `vite preview` of that build: it became the
+pressed tab and set the iframe to the Oracle of Nethys URL, and the page rendered in the
+frame. Not shown failing: the counter-check against the live JS was refused by the
+cc-plugin-privacy hook (see Traps). Not checked: phone width, links inside the frame, the
+live site after a push.
 
 Last deploy checked: `357f76e`, the Projects tab row with Vibe Coding How-To, Bugpacker
 and Project-Kit. On 2026-11-12, on the second of a series of fetches 10 seconds apart,
