@@ -136,7 +136,9 @@ JS only matches between two builds made with the same key.
 
 **The cc-plugin-privacy hook refuses some commands that mention this site's URLs**, even
 with no email in them. Seen 2026-11-17, twice, on a curl of a `fletcherbonds.com/assets/`
-file piped to grep. Cause not established. Earlier curls to the same hosts went through.
+file piped to grep. Cause not established. Earlier curls to the same hosts went through,
+and on 2026-11-17 and 2026-11-18 curls of the same asset URLs saved to files and compared
+with `cmp` went through as well.
 
 ## Decided, do not redo
 
@@ -207,29 +209,35 @@ release or deploy goes to the Committed, pushed, released section, with its date
 was checked, and anything else, such as a change made on a hosted service, goes to the
 section it belongs in.
 
-Nothing in flight as of 2026-11-12.
+Nothing in flight as of 2026-11-18.
 
 ## Queued, unscheduled, and not to be started unprompted
 
 What is agreed but waiting, with a pointer to wherever the full proposal is written out.
 
-Nothing queued as of 2026-11-12.
+Nothing queued as of 2026-11-18.
 
 ## Committed, pushed, released: three separate questions
 
-As of 2026-11-17, when this was written.
+As of 2026-11-18, when this was written.
 
-**Uncommitted.** Nothing. This deploy record is its own commit, approved by Fletcher on
-2026-11-17.
+**Uncommitted.** Nothing. This save-state is its own commit, asked for by Fletcher on
+2026-11-18.
 
 **Unpushed.** Answer with `git rev-list --left-right --count origin/main...main`. Snapshot
-on 2026-11-17 after Fletcher's push and `git fetch`: `0 0` with `origin/main` at `fb37ca4`.
-This commit makes it `0 1`. Do not trust this: Fletcher pushes, and that moves with no
-commit here.
+on 2026-11-18 after `git fetch`, before this commit: `0 0` with `origin/main` at `4d6c61a`
+(`git ls-remote` showed the same hash). This commit makes it `0 1`. Do not trust this:
+Fletcher pushes, and that moves with no commit here.
 
 **Unreleased or undeployed.** The site's code is all live. Fletcher pushed
-`1af02a6..fb37ca4` on 2026-11-17. `f3df356` and `fb37ca4` build the same three files, so
-the live files cannot show which one Netlify built; the Netlify dashboard was not read.
+`1af02a6..fb37ca4` on 2026-11-17 and `fb37ca4..4d6c61a` on 2026-11-18. Everything after
+`f3df356` changes only `NEXT.md`, and `f3df356`, `fb37ca4` and `4d6c61a` build the same
+three files, so the live files cannot show which one Netlify last built; the Netlify
+dashboard was not read. On 2026-11-18 at 08:15 PST, `https://fletcherbonds.com/?cb=...`
+returned 200 and served `index-lW1chVrd.js`, `index-DBh2zIZc.css` and
+`me-transparent-bkgrnd-aLNSf3yJ.png`, and `cmp` found all three byte-identical to a clean
+`git archive 4d6c61a` build. Shown failing: a copy of the live CSS with one byte changed at
+offset 1000 was reported by `cmp` as differing at char 1001.
 
 Last deploy checked: `fb37ca4`, which adds the Oracle of Nethys tab. On 2026-11-17, on the
 second of a series of fetches 10 seconds apart, started after the push,
